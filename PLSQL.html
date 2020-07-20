@@ -73,87 +73,57 @@
 	
 	<div id=section>
 	<p class=que id="1">Syllabus</p>
-	<b>ORACLE (SQL)</b>
-	<p> 1. FUNDAMENTALS OF DATABASE:What is Data,DBMS,RDBMS,Oracle<br/>
+	<b>ORACLE (SQL)</b><br/>
+	1. FUNDAMENTALS OF DATABASE:What is Data,DBMS,RDBMS,Oracle<br/>
 	 2. STRUCURE QUERY LANGUAGE( SQL ) AND CLIENT TOOLS <br/>
  3. SQL LANGUAGES : DDL,DML, DRL,TCL,DCL Commands<br/>
-
  4. DATA INTEGRITY CONSTRAINTS <br/>
-
  5. OPERATORS <br/>
-
-
   6.Types of JOINS <br/>
-
  7. SUB - QUERIES <br/>
-
  8. SQL OBJECTS <br/>
-
  9. PARTITIONS <br/>
+ 10. SQL FUNCTIONS 
 
-
- 10. SQL FUNCTIONS </p>
-
-<p><b><u>PL/SQL</u></b>
-
-Stored Procedures
-
-
-CONTOL STRUCTURES
-CONDITIONAL STATEMENTS
-
-
-LOOPS
-
-
-CURSORS
-
-
-What is BULK COLLECT?
-
-
-EXCEPTION HANDLING AND THEIR TYPES
-
-
-PL/SQL RECORDS AND TABLES
-
-
-FUNCTIONS
-
-
-PL/SQL Collections
-• VARRAYS
-• Associative Arrays
-• Nested tables/ PLSQL TABLES
-
-TRIGGERS
-
-
-PACKAGES
-
+<p><b><u>PL/SQL</u></b><br/>
+1.Stored Procedures<br/>
+2.CONTOL STRUCTURES<br/>
+3.CONDITIONAL STATEMENTS<br/>
+4.LOOPS<br/>
+5.CURSORS<br/>
+6.What is BULK COLLECT?<br/>
+7.EXCEPTION HANDLING AND THEIR TYPES<br/>
+8.PL/SQL RECORDS AND TABLES<br/>
+9.FUNCTIONS<br/>
+10.PL/SQL Collections<br/>
+11.VARRAYS<br/>
+12.Associative Arrays<br/>
+13.Nested tables/ PLSQL TABLES<br/>
+14.TRIGGERS<br/>
+15.PACKAGES
 </p>
+
 <p>
-ORACLE PL SQL INTERVIEW QUESTION ANSWER
-1. Tell me about yourself
-2. What is difference between TRUNCATE & DELETE?
-1. Truncate is a DDL command
-2. We can remove bulk amount of records at a time
-3. We can't rollback the records
-4. Release the space in database
-5. Truncate reset the high water mark
-6. Truncate explicitly commit
-1. Delete is a DML command
-2. We can delete record by record
-3. We can rollback the records
-4. Can’t release the memory in database
-5. Delete can’t reset the water mark
-6. Delete implicitly commit
-(OR)
+<b>ORACLE PL SQL INTERVIEW QUESTION ANSWER</b><br/>
+<b>1. Tell me about yourself</b><br/>
+<b>2. What is difference between TRUNCATE & DELETE?</b><br/>
+<b>3. Truncate is a DDL command</b><br/>
+<b>4. We can remove bulk amount of records at a time</b><br/>
+<b>5 We can't rollback the records</b><br/>
+<b>6. Release the space in database</b><br/>
+<b>7. Truncate reset the high water mark</b><br/>
+<b>8. Truncate explicitly commit</b><br/>
+<b>9. Delete is a DML command</b><br/>
+<b>10. We can delete record by record</b><br/>
+<b>11. We can rollback the records</b><br/>
+<b>12. Can’t release the memory in database</b><br/>
+<b>13. Delete can’t reset the water mark</b><br/>
+<b>14. Delete implicitly commit(OR)</b><br/>
 Ans: Differences:
 TRUNCATE commits after deleting entire table i.e., cannot be rolled back.
 Database triggers do not fire on TRUNCATE DELETE allows the filtered deletion.
 Deleted records can be rolled back or committed.Database triggers fire on DELETE.
-3. Difference between view and materialized view
+<b>15. Difference between view and materialized view</b><br/>
 Difference
 View is a logical table
 View can hold the query
@@ -163,7 +133,7 @@ Mv is a physical table
 Mv can hold the query with refresh data
 We can create indexes on mv
 Mv will create performance issues
-4. Difference between procedure and function?
+<b>16. Difference between procedure and function?</b><br/>
 Procedure:
 Procedure allow the DML statements without any restrictions
 We can’t call procedure in sql language
@@ -172,18 +142,18 @@ Function:
 Function not allow the DML statements (If you need to use we can use pragma)
 We can call Function in sql language
 Function can’t store images
-5. What is cursor?
+<b>17. What is cursor?</b><br/>
 Cursor is private sql area which is used to execute sql statements and store processing information
-6. What is explicit and implicit cursor and examples?
+<b>18. What is explicit and implicit cursor and examples?</b><br/>
 The implicit cursor is automatically declared by oracle every time an sql statement is executed whenever you issue a sql statement, the oracle server opens an area of memory in which the command is parsed and executed. Every implicit cursor attribute start with sql%.
 An explicit cursor is created and managed by the user. And used for multi row select statement.
-7.What do u understand by database and what is objects in oracle
+<b>19.What do u understand by database and what is objects in oracle</b><br/>
 Ans: A database is defined as a collection of meaningful data. Objects in oracle means Table, Views, Procedures, Triggers, Synonym etc
-8.What is a table, view, snapshot?
+<b>20.What is a table, view, snapshot?</b><br/>
 Table: A table is the basic unit of data storage in an Oracle database. The tables of a database hold all of the user accessible data. Table data is stored in rows and columns.a
 Views: A view is a virtual table. Every view has a query attached to it. (The query is a SELECT statement that identifies the columns and rows of the table(s) the view uses.)
 Snapshot: A Snapshot is a recent copy of a table from database or in some cases ,a subset of rows/columns of a table. It is also known as Materialized view.
-9.Do a view contain data?
+<b>21. Do a view contain data?</b><br/>
 Ans: Views do not contain or store data
 What are the advantages of views?
 Ans: Provide an additional level of table security, by restricting access to a predetermined set of rows and columns of a table.
