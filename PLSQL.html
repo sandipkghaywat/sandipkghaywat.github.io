@@ -122,7 +122,7 @@
 Ans: Differences:
 TRUNCATE commits after deleting entire table i.e., cannot be rolled back.
 Database triggers do not fire on TRUNCATE DELETE allows the filtered deletion.
-Deleted records can be rolled back or committed.Database triggers fire on DELETE.
+Deleted records can be rolled back or committed.Database triggers fire on DELETE.<br/>
 <b>15. Difference between view and materialized view</b><br/>
 Difference
 View is a logical table
@@ -132,7 +132,7 @@ View will create security purpose
 Mv is a physical table
 Mv can hold the query with refresh data
 We can create indexes on mv
-Mv will create performance issues
+Mv will create performance issues<br/>
 <b>16. Difference between procedure and function?</b><br/>
 Procedure:
 Procedure allow the DML statements without any restrictions
@@ -141,18 +141,18 @@ We can store images in stored procedure
 Function:
 Function not allow the DML statements (If you need to use we can use pragma)
 We can call Function in sql language
-Function can’t store images
+Function can’t store images<br/>
 <b>17. What is cursor?</b><br/>
-Cursor is private sql area which is used to execute sql statements and store processing information
+Cursor is private sql area which is used to execute sql statements and store processing information<br/>
 <b>18. What is explicit and implicit cursor and examples?</b><br/>
 The implicit cursor is automatically declared by oracle every time an sql statement is executed whenever you issue a sql statement, the oracle server opens an area of memory in which the command is parsed and executed. Every implicit cursor attribute start with sql%.
-An explicit cursor is created and managed by the user. And used for multi row select statement.
+An explicit cursor is created and managed by the user. And used for multi row select statement.<br/>
 <b>19.What do u understand by database and what is objects in oracle</b><br/>
-Ans: A database is defined as a collection of meaningful data. Objects in oracle means Table, Views, Procedures, Triggers, Synonym etc
+Ans: A database is defined as a collection of meaningful data. Objects in oracle means Table, Views, Procedures, Triggers, Synonym etc<br/>
 <b>20.What is a table, view, snapshot?</b><br/>
 Table: A table is the basic unit of data storage in an Oracle database. The tables of a database hold all of the user accessible data. Table data is stored in rows and columns.a
 Views: A view is a virtual table. Every view has a query attached to it. (The query is a SELECT statement that identifies the columns and rows of the table(s) the view uses.)
-Snapshot: A Snapshot is a recent copy of a table from database or in some cases ,a subset of rows/columns of a table. It is also known as Materialized view.
+Snapshot: A Snapshot is a recent copy of a table from database or in some cases ,a subset of rows/columns of a table. It is also known as Materialized view.<br/>
 <b>21. Do a view contain data?</b><br/>
 Ans: Views do not contain or store data
 What are the advantages of views?
