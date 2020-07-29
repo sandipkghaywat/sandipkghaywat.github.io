@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8" http-equiv="content-type">
+
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+<script>  
+$(document).ready(function(){  
+        $("#hide").click(function(){  
+        $("p").hide(1000);  
+    });  
+    $("#show").click(function(){  
+        $("p").show(1000);  
+    });  
+});  
+</script>  
+		<link rel="stylesheet" type="text/css" href="Tutorials.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>
+		Home Page
+	</title>
+	</head>
+	<body>		
+		<div id=header1 class=header  style="align-items: center;justify-content: center;">
+			<h1>Tutorials</h1>
+		</div>
+		<div>
+			<img id= logo src="images.png" alt="logo">
+		</div>
+		
+		<div id=ul1 class=mynavul>
+	<ul>
+		<li><a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a></li>
+		<li><a href="C.html">C</a></li>
+		<li><a href="C++.html">C++</a></li>
+		<li><a href="Java.html">Java</a></li>
+		<li><a href="Android.html">Android</a></li>
+		<li><a href="BigData.html">BigData</a></li>
+		<li><a href="Cloud.html">Cloud</a></li>
+		<li><a href="HTML5.html">HTML5</a></li>
+		<li><a href="CSS3.html">CSS3</a></li>
+		<li><a href="JavaScript.html">JavaScript</a></li>
+		<li><a href="JS Angular.html">JS Angular</a></li>
+		<li><a href="XML.html">XML</a></li>
+		<li><a href="AJAX.html">AJAX</a></li>
+		<li><a href="JSON.html">JSON</a></li>
+		<li><a href="ASP.html">ASP</a></li>
+		<li><a href="PHP.html">PHP</a></li>
+		<li><a href="jQuery.html">jQuery</a></li>
+		<li><a href="Bootstrap.html">Bootstrap</a></li>
+		<li><a href="C#.html">C#</a></li>
+		<li><a href="VB.NET.html">VB.NET</a></li>
+		<li><a href="Python.html">Python</a></li>
+		<li><a href="PLSQL.html">PL/SQL</a></li>
+	</ul>
+</div>
+	<div id=leftmenus>
+		<ol class="r">
+		<li><a href="java_intro.html">Intro</a></li>		
+		</ol>
+		
+	</div>
+	
+	<div id=section>
+		<p class=que id="1">1. What is Java?</p>
+		<p>
+		    Java is  object oriented Higher level programming language. </p>
+
+
+			<p class=que id="2">2. History of Java?</p>
+			<p>Sun was wanted to see what will be next in computing?<br>
+So they assembeled one team named as <b>Green team</b><br>
+<u>Motivaion:</u>
+Inttial they want to make network of heterogeneous consumer deveces.Theat deveces will be small reliable distributed realtime embedded system.So they decided to make a prototype.<br>
+<u>Goals:</u>
+Consume less memory,platform independent,multi threading,secure.
+INITIATLITY THEY THINK TO USE C++ BUT IT HAS SOME LIMITATION AS WE ALL KNOWS <br>
+So new language invented ie. Oak(1991) by James Arthur Goslin in 1995 it renamed as Java.
+5 sept. 1992 the green team came with the device ie. *7 (StarSeven) handheld touch screen device.
+Then they targeted Cable TV it doesnt work<br>
+Then they come toward network, internet.<br>
+Before java comes into existance internate moves only satic.<br>
+so sun world inavonce browser HotJava HTML+program(applet)=dynamic<br>
+its java installed browser and applet are platform independent.<br>
+Netscape navigator ship with Java.<br>
+Java was conceived by James Gosling, Patrick Naughton, Chris Warth, Ed Frank, and Mike Sheridan.
+First Version relesed in 1996</p>
+ 
+
+<p class=que id="3">3. The versions that has been released.?</p>
+		
+<table border = "2">
+<tr><th>Version</th> <th>Released on</th> <th>No. of Classe</th>  <th>No. of Packages</th></tr>
+<tr><td>JDK Alpha and Beta </td> <td>(1995)</td><td></td><td></td></tr>  
+<tr><td>JDK 1.0</td>  <td>(23rd Jan, 1996)</td>  <td>212</td>  <td>08</td>  </tr>
+<tr><td>JDK 1.1</td>  <td>(19th Feb, 1997)</td>  <td>503</td>  <td>23</td>  </tr>
+<tr><td>J2SE 1.2</td>  <td>(8th Dec, 1998)</td>  <td>1520</td>  <td>59</td> </tr>
+<tr><td>J2SE 1.3</td>  <td> (8th May, 2000)</td> <td></td>  <td></td> </tr>
+<tr><td>J2SE 1.4</td>  <td>(6th Feb, 2002)</td>  <td></td>  <td></td> </tr>
+<tr><td>J2SE 5.0</td>  <td>(30th Sep, 2004)</td>  <td>3562</td>  <td>166</td></tr>
+<tr><td>Java SE 6</td>  <td>(11th Dec, 2006)</td>  <td>3792</td><td>203</td></tr>
+<tr><td>Java SE 7</td>  <td> (28th July, 2011)</td> <td>4024</td><td>209</td></tr>
+ <tr><td>Java SE 8</td> <td>(18th March, 2014)</td><td></td><td></td></tr>
+    
+</table>
+<br>
+On January 27, 2010 sun was acquired by Oracle Corporation for US$7.4 Billion.Hense fromt 1.7 its Oracle Product.
+<p class=que id="4">4. Features (Buzzwords) of java.(SSHRIPAOMDD )</p>
+Simple<br>
+Secure<br>
+Hybrid<br>
+Roboust<br>
+Interpreted<br>
+Portable<br>
+Architecture Nueral<br>
+Objet oriented <br>
+Multithreading <br>
+Distributed<br>
+Dynamic<br>
+</p>
+
+<p class=que id="5">5. Java operators (Eight Types)</p>
+<table border="2">
+<tr>
+	<td>Assignment Operators</td><td>=</td>
+</tr>
+<tr>
+	<td>Arithmetic Operators</td><td>-    +   *   /   %   ++   --</td>
+</tr>
+<tr>
+	<td>Relational Operators</td><td>>  <   >=      <=    ==   != </td>
+</tr>
+<tr>
+	<td>Assignment Operators</td><td>&&    ||    &  |  !   ^</td>
+</tr>
+<tr>
+	<td>Logical Operators</td><td>&   |   ^  >>   >>></td>
+</tr>
+<tr>
+	<td>Bit wise Operator</td><td>=</td>
+</tr>
+<tr>
+	<td>Compound Assignment Operators</td><td>+=     -=    *=    /=    %=   <<= >>= >>>=</td>
+</tr>
+<tr>
+	<td>Conditional Operator</td><td>?:</td>
+</tr>
+
+</table> 
+  
+ 
+<p>
+<table border="2">
+<tr>
+<th id="h1">Operators</th>
+<th id="h2">Precedence</th>
+</tr>
+<tr>
+<td  >postfix</td>
+<td  ><code><em>expr</em>++ <em>expr</em>--</code></td>
+</tr>
+<tr>
+<td  >unary</td>
+<td  ><code>++<em>expr</em> --<em>expr</em> +<em>expr</em> -<em>expr</em> ~ !</code></td>
+</tr>
+<tr>
+<td  >multiplicative</td>
+<td  ><code>* / %</code></td>
+</tr>
+<tr>
+<td  >additive</td>
+<td  ><code>+ -</code></td>
+</tr>
+<tr>
+<td  >shift</td>
+<td  ><code>&lt;&lt; &gt;&gt; &gt;&gt;&gt;</code></td>
+</tr>
+<tr>
+<td  >relational</td>
+<td  ><code>&lt; &gt; &lt;= &gt;= instanceof</code></td>
+</tr>
+<tr>
+<td  >equality</td>
+<td  ><code>== !=</code></td>
+</tr>
+<tr>
+<td  >bitwise AND</td>
+<td  ><code>&amp;</code></td>
+</tr>
+<tr>
+<td  >bitwise exclusive OR</td>
+<td  ><code>^</code></td>
+</tr>
+<tr>
+<td  >bitwise inclusive OR</td>
+<td  ><code>|</code></td>
+</tr>
+<tr>
+<td  >logical AND</td>
+<td  ><code>&amp;&amp;</code></td>
+</tr>
+<tr>
+<td  >logical OR</td>
+<td  ><code>||</code></td>
+</tr>
+<tr>
+<td  >ternary</td>
+<td  ><code>? :</code></td>
+</tr>
+<tr>
+<td  >assignment</td>
+<td  ><code>= += -= *= /= %= &amp;= ^= |= &lt;&lt;= &gt;&gt;= &gt;&gt;&gt;=</code></td>
+</tr>
+</table>
+</p>
+<p class=que id="6">6. Data Types in java of java </p>
+Primitive data types are defined by the programming language. ex.int,float,char.etc.<br>
+Non-primitive data types are not defined by the programming language, but are instead created by the programmer. They are sometimes called "reference variables," or "object references," since they reference a memory location, which stores the data. In the Java programming language, non-primitive data types are simply called "objects" because they are created, rather than predefined. <br>
+<img src="datatype2.JPG" alt="datatype in java"/>
+<table border="2">
+							<caption>
+								<b>Note:</b>&nbsp;Cahracter and Boolean are unsigned and Integral are signed data types.
+							</caption>
+							<tr >
+								<th style="width:80px;">Type</th>
+								<th style="width:100px;">Size in Bytes</th>
+								<th style="width:230px;">Range</th>
+								<th style="width:90px;">Default Value (For Field)</th>
+							</tr>
+							<tr>
+								<td>byte</td>
+								<td>1 byte</td>
+								<td>-128 to 127</td>
+								<td >0</td
+							</tr>
+							<tr >
+								<td>short</td>
+								<td>2 bytes</td>
+								<td>-32,768 to 32,767</td>
+								<td >0</td
+							</tr>
+							<tr>
+								<td>int</td>
+								<td>4 bytes</td>
+								<td>-2,147,483,648 to 2,147,483, 647</td>
+								<td >0</td
+							</tr>
+							<tr>
+								<td>long</td>
+								<td>8 bytes</td>
+								<td>-9,223,372,036,854,775,808 to <br/> 9,223,372,036,854,775,807</td>
+								<td >0</td
+							</tr>
+							<tr>
+								<td>float</td>
+								<td>4 bytes</td>
+								<td>approximately &#177;3.40282347E+38F 
+									<br/> (6-7 significant decimal digits)
+									<br/>
+									<i>Java implements IEEE 754 standard</i>
+								</td>
+								<td >0.0f</td
+							</tr>
+							<tr>
+								<td>double</td>
+								<td>8 bytes</td>
+								<td>approximately &#177;1.79769313486231570E+308 <br/> (15 significant decimal digits)</td>
+								<td >0.0d</td
+							</tr>
+							<tr>
+								<td>char</td>
+								<td>2 byte</td>
+								<td>0 to 65,536 (unsigned)</td>
+								<td>'\u0000</td>
+							</tr>
+							<tr >
+								<td>boolean</td>
+								<td>not precisely defined<i>*</i></td>
+								<td>true or false</td>
+								<td>false</td>
+							</tr>
+						</table>
+						<b>String or other object	null</b><br>
+	
+<p class=que id="7">7. Acees Modifiers</p>
+<table border = "2">
+<tr><td>Specifier</td><td>Acees in Sub Class</td><td></td><td>Acees in other class</td><td></td></tr>
+<tr><td></td><td>same package</td><td>other package</td><td>same package</td><td>other package</td></tr>
+<tr><td>private</td><td>No</td><td>No</td><td>No</td><td>No</td></tr>
+<tr><td>public</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+<tr><td>protected</td><td>Yes</td><td>Yes</td><td>Yes</td><td>No</td></tr>
+<tr><td>default</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td></tr>
+</table>
+<b>Note:</b>In old languages like C++ public, private, protected are considered as Access Specifiers. Except this the remaining (like static) are considered as Access Modifieres.<br>-But in java there is no concept of specifiers because java treats all are by default modifiers only.<br>
+- public, private, protected default static final, abstract, synchronized, native,strictfp, transient and volatile all are modifiers only.
+
+<p class=que id="8">8. Reserve Keywords</p>
+<p>Here is a list of keywords in the Java programming language. You cannot use any of the following as identifiers in your programs. The keywords <code>const</code> and <code>goto</code> are reserved, even though they are not currently used. <code>true</code>, <code>false</code>, and <code>null</code> might seem like keywords, but they are actually literals; you cannot use them as identifiers in your programs.</p>
+<table border="2">
+<tr><th>Modifiers</th><th>Flow Control</th><th>Data Types</th><th>Exception</th><th>Class</th><th>Return Type</th><th>Reserved Literals</th><th>Unused</th><th>Object related</th><th>(1.5)</th></tr>
+  <tbody>
+    <tr>
+      <td>public</td>
+      <td>if</td>
+      <td> byete</td>
+      <td>try </td>
+      <td>class </td>
+      <td>void </td>
+      <td>true </td>
+      <td>goto </td>
+      <td>new </td>
+      <td>enum </td>
+    </tr>
+    <tr>
+      <td>private</td>
+      <td>else </td>
+      <td>short </td>
+      <td>catch </td>
+      <td>interface </td>
+      <td>&nbsp;</td>
+      <td>false </td>
+      <td>count </td>
+      <td>instanceof </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>protected </td>
+      <td>switch </td>
+      <td>int </td>
+      <td>finally </td>
+      <td>extends </td>
+      <td>&nbsp;</td>
+      <td>null </td>
+      <td>&nbsp;</td>
+      <td>super </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>static </td>
+      <td>case </td>
+      <td>long </td>
+      <td>throw </td>
+      <td>implements </td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>this </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>final </td>
+      <td>default</td>
+      <td>float </td>
+      <td>throws </td>
+      <td>package </td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>abstract </td>
+      <td>while </td>
+      <td>double </td>
+      <td>assert (1.4) </td>
+      <td>import </td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>synchronized </td>
+      <td>do </td>
+      <td>boolean </td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>native </td>
+      <td>break </td>
+      <td>char </td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>strictfp </td>
+      <td>continue </td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>transient </td>
+      <td>return </td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>valantile </td>
+      <td>for </td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+<p class=que id="9">9. Compilation</p>
+Compilation :<br>
+Every computer has a fix set of instruction tha it understands.<br>
+instuection: it is of instruction. ie. 0s and 1s.It is Machine language or machine code or native code.<br>
+ ex. 0110100010101010.<br>
+So machine language deficult to understang so compute scientis comeup with Assembly Language which is comapred to eassy, But computer understand only machine language.<br>
+Assembly language is known as Low Level Langauage.<br>
+ex.Li $t1, 5 ADD $t10, 6 but writing program in Assembly language was still touf.<br>
+High Level Languages are then introduced are FORTRAN, C, C++, JAVA, C#.<br>
+So the translation from Low / Higher level language to the targeted or Machine level language is called as compilation.
+
+
+
+<p class=que id="10">10. Four pillars of oops </p><p>
+<b>1. Abstraction:</b>&nbsp;Abstraction is a process of exposing essential feature of an entity
+while hiding other irrelevant detail. abstraction reduces code complexity and at the same time it makes your aesthetically pleasant.
+Abstraction in java is achieved by using interface and abstract class. Interface give 100% abstraction and abstract class give 0-100% abstraction.</p>
+<p><b>2.Encapsulation:</b>&nbsp;Encapsulation is wrappingup of data and code. Like clas is encapsulated.Encapsulation is when you hide your modules internal data and all other implementation details/mechanism
+from other modules.
+it is also a way of restricting access to certain properties or component. pojo class is the best example of encapsulation.</p>
+<p><b>3.Plymorlphism:</b>&nbsp;Poly is the greek word poly means multiple and morphism means forms. Pollymorphism we collectivelly called as multiple forms. In other words i.e one entity which acts different role at different instances we can called as polymorphism.<br>
+There are two types: <br>
+i)Method overloading ii) operator overloading iii) constructor overloading<br>
+2) Method overriding:It is also known as late binding, Run Time Polymorphism or dynamic polymorphism.</p> 
+<table border="2"> <col width="470">
+  <col width="470">
+        	<th>Methos Overloading /Early Binding/Compile time/Static Binding</th><th>Methos Overridding /Late Binding/Run time/Dynamic binding</th>
+<tr>
+	<td>Method which has the same name but different list of argument is called as method overloading.Actually method name, Signature must be same but argument must be different at least order. No restriction for return type.</td>
+<td>The parent class have the method But if the child clas is not satisfied with that implimantation then child will redefine the method and that "Redefining the parent class method called method overridding." Method name, argument type and signature, return type must be same.</td></tr>
+<tr><td>Method Overloading, Constructure Overloading, and Operator Overloading</td><td>Abstract class, Interface</td></tr>
+<tr><td>Private, static and final methods show static binding. Because, they can not be overridden.</td><td>Other than private, static and final methods show dynamic binding. Because, they can be overridden.</td></tr>
+<tr><td>Actual object is not used for binding.</td><td>Actual object is used for binding.</td></tr>
+</table>
+<p><b>4.Inheritance:</b>&nbsp; Inheritance is the process of extending the properties of super class or parent class by the sub class or child class is called as inheritance. <br> 
+There are basically two types of inheritance in java 1) Single 2) MUltiple <br>
+<b><u>Note:</b></u>&nbsp;Java does not support Multiple Inheritance bcoz it creates confussion to access the properties of parent class.Instead java supports Interface in java.</p>
+<table border="2"> <col width="470">
+  <col width="470">
+        	<th>Single level Inheritance</th><th>Multilevel Inheritance</th>
+        	<tr><td>When a class extends another one class only then we  call it a single inheritance.</td><td>“Multiple Inheritance” refers to the concept of one class extending (Or inherits) more than one base class.</td></tr>
+        </table>
+
+
+
+<p class=que id="11">11. Setting up the path for windows machine.(Permenant)</p>
+
+Assuming you have installed Java in c:\java\jdk directory:<br>
+- Right-click on 'My Computer' and select 'Properties'.<br>
+- Click on the 'Environment variables' button under the 'Advanced' tab.<br>
+- Now alter the 'Path' variable so that it also contains the path to the Java executable. Example, if the path is currently set to 'C:\WINDOWS\SYSTEM32', then change your path to read 'C:\WINDOWS\SYSTEM32;c:\java\jdk\bin'.<br>
+We can set path temporary base on Command promt like type
+set path= "C:\Program Files\Java\jdk1.8.0_73\bin"
+
+
+	<p class=que id="12">12. Boxing and Unboxing. </p>
+	<p>Wrapper class in java proviede the mechanism to convert primitie into onject and object into promitive. The process of converting Primitive into Object is called as Autoboxing and Object into Primitive is called Unboxing.</p>
+		
+		
+		
+		<p class=que id="13">13. Why java is WORA. </p>
+		<p>WORA means Write Once Run Anywhere:Java is Compiled and Interpreted language.Once it Compile it creates a bytecode ie .class file. Various platform might vary in fonfiguration, those they would all understand the same set of Bytecode, thereby making the java program platform independent java achives WORA.</p>
+		<p class=que id="14">14. What is JDK, JRE, JVM </p>
+		JDK is an acronym for Java Development Kit.It physically exists.It contains JRE + development tools.<br>
+		JRE is an acronym for Java Runtime Environment.It is used to provide runtime environment.It is the implementation of JVM.It physically exists.It contains set of libraries + other files that JVM uses at runtime.
+Implementation of JVMs are also actively released by other companies besides Sun Micro Systems.<br>
+VM (Java Virtual Machine) is an abstract machine. It is a specification that provides runtime environment in which java bytecode can be executed.
+JVMs are available for many hardware and software platforms. JVM, JRE and JDK are platform dependent because configuration of each OS differs. But, Java is platform independent.
+The JVM performs following main tasks:<br>
+1. Loads code<br>
+2. Verifies code<br>
+3. Executes code<br>
+4. Provides runtime environment
+		<p class=que id="15">15. What are the differences between a compiler, an interpreter and an assembler?</p>
+		<p>Compiler converts source code to some kind of intermediate form. For static language, a compiler usually converts the source code to assembly, which usually did not get stored to disk, then the assembler is invoked to convert the assembly to binary code, which is usually stored as object file(.o or .obj suffix usually), then linker is invoked to link object file(s) to binary executable. Also it is common to refer to this whole process of compiling, assembling, linking as compiling. So you may call gcc a compiler, but it actually invokes cc1 which is the compiler to compile, as which is the assembler to assemble, ld which is the linker to link. </p>
+<p>
+ For language which has a intermediate so called bytecode form, the source code is first converted to byte code, this process can be called compiling, javac serves as an example. Bytecode cannot be run on host machines, it needs a program, which is actually the process from the viewpoint of OS, to interpret the bytecode to the host machine, this program is called a interpreter, think of java. Some language, like python, do the compiling and interpreting work with a single command</p>
+		<p class=que id="16">16. What is Class Loader and thier types</p>
+		<p>The Java Classloader is a part of the Java Runtime Environment that dynamically loads Java classes into the Java Virtual Machine. Usually classes are only loaded on demand. The Java run time system does not need to know about files and file systems because of classloaders.
+			1.Bootstrap Class Loader<br>
+			2. Extension Class Loader<br>
+			3. Application Class Loader</p>
+			Note:These clas loader follws the deligation hirarchy meachanism in java. There prioritya of executution is from top to bottom.
+		<p class=que id="17">17. What is JIT Compiler</p>
+		In the Java programming language and environment, a just-in-time (JIT) compiler is a program that turns Java bytecode (a program that contains instructions that must be interpreted) into instructions that can be sent directly to the processor.
+		<p class=que id="18">18. Which are memory area in JVM</p>
+		<p>Basically there are five types of memory area in JVM.<br>
+		<b>1.Method Area:</b>&nbsp; This is the class area the binary data of class resides here. String constant pool area resides here. Its default size is 64 MB till the JDK 1.7 from JDK 1.8 its increases to unlimited size.This area is loaded once per JVM.<br>
+		<b>2. Heap Area:</b>&nbsp;Its area for objects, Class class object and instance variable data, Arrays are allocated in this area.This area is loaded once per JVM.<br>
+		<b>3. Stack Area:</b>&nbsp;It keep track for current executing method and its data. Its created one per thread.<br><b>4. Program Counter Register area:</b>&nbsp;Which instruction will execute the next PC register keep track of it.<br><b>5. Native Method Area:</b>&nbsp; This is the area for the such library files which are not incoded in java rather it in other native languages like C or C++.
+
+		<p class=que id="19">19. Explain main method</p>
+		This is necessary since main() is called by the Java interpreter before any objects are made. The keyword void simply tells the compiler that main() does not return a value. The true entry point to any application is a static method.
+		<p class=que id="20">20. Explain System.out.println();</p>
+		System is the class which is in java.lang package and which is only by default accecible package. <br>
+    -Out is the static variable of printStream type.<br>
+    -println() is the method which is present in printStream class
+        <p class=que id="21">21. Rules for declaring the variables.</p>
+        1. A variable name is any combination of any 31 alphabets, digits or underscore. Maximum 247 characters are allowded.<br>2. First character must be alphabet or underscore. <br>3. No commas, space, or special symbols are not allowded.
+        <p class=que id= "22">22. Difference between path and classpath in Java</p>
+<p>Path variable is set for provide path for all java tools like java, javac, javap, javah, jar, appletviewer. In Java for run any program we use java tool and for compile java code use javac tool. These all tools are available in bin folder so we set path upto bin folder.
+
+classpath
+
+classpath variable is set for provide path of all java classes which is used in our application. All classes are available in lib/rt.jar so we set classpath upto lib/rt.jar.</p>
+ <p class=que id="23">23. Abstraction Vs Interface.</p>
+		
+
+        <table border="2"> <col width="470">
+  <col width="470">
+        	<th>Abstraction</th><th>Interface</th>
+<tr>
+	<td>If we are talking about implementation but not completely(partial implementation) then go for.... 
+	ex: Generic Servlet and HTTP Servlet</td>
+<td>If we dont know anything about implementation just we have requirment specificaton(100% abstract) then go foe interface ex: servlet interface </td>
+</tr>
+<td>We can declare abstract as well as concrete method also
+Need not to public static final</td><td>Its pure abstract class. Every method is always public and abstract by default.
+Every variable is public static final.
+We cannot create object so synchronization not applicable.
+for the interface we should initialize the variable at the time of declaration.
+Instance block static block concept not applicable because we are not creating object in interface.
+constructor concept is not applicable because every variable is static and final and already initialized so no need of constructor.</td>
+</tr>
+</table>
+
+
+
+
+</p>
+        <p class=que id="24">24. What id marker Interface and Annnotation</p> Marker interface means blank interface in other words the interface which doesnt contain any method. implementing it is meant to imply some special treatment of the implementing class.e.g. Serializable, Clonnable and Remote<br>
+        <u>Annotations are better than Marker Interfaces</u><br>
+        - Since jdk 1.5 we can use annotation instead of marker interface.
+        -Java Annotation is a tag that represents the metadata i.e. attached with class, interface, methods or fields to indicate some additional information which can be used by java compiler and JVM.
+
+Annotations in java are used to provide additional information, so it is an alternative option for XML and java marker interfaces.
+        <p class=que id="25">25. What is the difference between the data types of java and C++</p>
+ 		1. Data types in java are strictly typedef.<br>
+ 		2. The language standard was developed i.e. Unicode System.<br>
+3.In unicode, character holds 2 byte, so java also uses 2 byte for characters. and lowest value:\u0000 highest value:\uFFFF<br>
+3. The data types are 2 byes and are guarented as per their types they are sure signed or Unsigned.
+ex.char is guarenged to be signed.
+		<p class=que id="26">26. Call Byreference Vs Call Byvalue</p>
+    There is only call by value in java, not call by reference. If we call a method passing a value, it is known as call by value. The changes being done in the called method, is not affected in the calling method.
+		<p class=que id="27">27. final keyword in java?</p>
+		Variable: It will be like a constanat.<br>
+		Method: We can inherit the final method but cannot override it.<br>
+		Blank final variable: we can initialize the blank fina vaariable by the constructor only.<br>
+		Static final variable: we can initalize it in static block only.<br>
+		fianl argument: We can not change once it declared that argument final.<br>
+		Constructor: We cannot declare constructor as final because we cannot inherited it.
+
+		Class: We cannot inherit the final class
+		<p class=que id="28">28. Exception Diagram</p>
+		<img src = "ThrowableHirarchy.png" width="990" height="900" align = "left"><br>
+		<p class=que id="29">29. Deep Cloning Vs Shalow Clonning</p>
+		Object Cloning in Java. The object cloning is a way to create exact copy of an object.<br>
+		A shallow copy can be made by simply copying the reference.<br>
+		This can lead to unpleasant side effects if the elements of values are changed via some other reference.<br>
+		A deep copy means actually creating a new array and copying over the values.
+
+		<p class=que id="30">30. Object Lock Vs Class Lock</p>
+		Object level locking is mechanism when you want to synchronize a non-static method or non-static code block such that only one thread will be able to execute the code block on given instance of the class.<br>
+		Class level locking prevents multiple threads to enter in synchronized block in any of all available instances on runtime. This means if in runtime there are 100 instances of  DemoClass, then only one thread will be able to execute demoMethod() in any one of instance at a time, and all other instances will be locked for other threads. This should always be done to make static data thread safe.
+		<p class=que id="31">31. Fully checked Vs Partically Checked.</p>
+		Checked exception said to be fully checked if and only if all its child classes are checked IOException, InterpretedException, RuntimeException, ServletException.<br>
+		a checked exception is said to be partially checked if and only if some of its child classes are un-checked<br>Exception, Throwable.
+		
+		<p class=que id="32">32. Function Vs Method</p>
+    A function is a piece of code that is called by name. It can be passed data to operate on (ie. the parameters) and can optionally return data (the return value).
+
+All data that is passed to a function is explicitly passed.
+
+A method is a piece of code that is called by name that is associated with an object. In most respects it is identical to a function except for two key differences.
+
+It is implicitly passed the object on which it was called.
+It is able to operate on data that is contained within the class (remembering that an object is an instance of a class - the class is the definition, the object is an instance of that data).
+		<p class=que id="33">33. Composition IS-A Vs Aggregation HAS-A</p>
+    <b>Association</b> <br>
+
+Association is a relationship between two objects. In other words, association defines the multiplicity between objects. You may be aware of one-to-one, one-to-many, many-to-one, many-to-many all these words define an association between objects. Aggregation is a special form of association. Composition is a special form of aggregation.<br>
+
+
+
+Example: A Student and a Faculty are having an association.<br>
+
+<b>Aggregation</b><br>
+
+Aggregation is a special case of association. A directional association between objects. When an object ‘has-a’ another object, then you have got an aggregation between them. Direction between them specified which object contains the other object. Aggregation is also called a “Has-a” relationship.<br>
+
+
+
+<b>Composition</b><br>
+
+Composition is a special case of aggregation. In a more specific manner, a restricted aggregation is called composition. When an object contains the other object, if the contained object cannot exist without the existence of container object, then it is called composition.<br>
+Example: A class contains students. A student cannot exist without a class. There exists composition between class and students.
+
+
+		<p class=que id="34">34. Static keyword</p>
+    <b>Variable</b><br>
+    When a variable is declared with the keyword “static”, its called a “class variable”. All instances share the same copy of the variable. A class variable can be accessed directly with the class, without the need to create a instance.<br>
+    It is a variable which belongs to the class and not to object(instance)<br>
+Static variables are initialized only once , at the start of the execution . These variables will be initialized first, before the initialization of any instance variables<br>
+A single copy to be shared by all instances of the class<br>
+A static variable can be accessed directly by the class name and doesn’t need any object<br>
+Syntax : <class-name>.<variable-name><br>
+<b>static method</b><br>
+
+It is a method which belongs to the class and not to the object(instance)<br>
+A static method can access only static data. It can not access non-static data (instance variables)<br>
+A static method can call only other static methods and can not call a non-static method from it.<br>
+A static method can be accessed directly by the class name and doesn’t need any object<br>
+Syntax : <class-name>.<method-name><br>
+A static method cannot refer to “this” or “super” keywords in anyway<br>
+<b>static block</b><br>
+
+The static block, is a block of statement inside a Java class that will be executed when a class is first loaded in to the JVM.
+		<p class=que id="35">35. Error Vs Exception</p>
+		<table border="2"> <col width="470">
+  		<col width="470">
+        	<th>Error</th><th>Exception</th>
+        	<tr><td>Errors are non-recoverable.Mostly it caluse because of lack of system problems</td><td>Most of the time exeption caused by our program and this ae recoverable. ex. FileNotFoundExecption</td></tr>
+        </table>
+		<p class=que id="36">36. Cheked exception Vs Unchecked exception</p>
+		<table border="2"> <col width="470">
+  		<col width="470">
+        	<th>Checked Exception</th><th>Unchecked Exception</th>
+        	<tr><td>The exception whic are checked by compiler for the smooth execution of program at runtime these exception ae checked exception.</td><td>The exceptions which are not checked by the compiler whether programmer handleling or not such exceptons are Un-checked exception.</td></tr>
+        	<tr><td>We handle such exception either by try catch or by throws.</td><td>ex. ArithmeticException</td></tr>
+        	<tr><td>Except RuntimeException, Error and its child classes are checked.</td><td>RuntimeException, Error and its child classes are un-checked.</td></tr>
+        </table>
+		<p class=que id="37">37. Reader Vs Writer Hirarchy</p>
+    <img src = "readerVsWriter.jpg" width="990" height="400" align = "left"><br>
+		<p class=que id="38">38. Mutable Vs Immutable</p>
+		<p class=que id="39">39. What is Serialization, Deserialization and Externalization?</p>
+        <table border="2"> 
+  <col width="313"><col width="313"><col width="313">
+  <th>Serialization</th><th>Deserialization</th><th>Externalization</th>
+  <tr><td>The serialization is the process of writing the state of an object to a file is called as serialization.</td><td>It is the process of reading the state of an object from a file is called deserialization.</td><td>The Externalizable interface provides the facility of writing the state of an object into a byte stream in compress format. It is not a marker interface.</td></tr>
+  <tr><td>In other words is the process of converting the objcet from java supported from to either file supported form or network supported form.</td><td>In other words it is the process of converting an object from either file or network suported from into java supported form.</td><td>Externalizable interface you have to implement writeExternal() and readExternal() methods which contains the logic to store and retrieve data and with changes you might need to do changes in the code logic.</td></tr>
+  <tr><td>It uses fileoutputstream and objectoutputstream.</td><td>It use FileInputStream and ObjectInputStream</td><td></td></tr>
+  <tr><td>It is mainly used in Hibernate, RMI, JPA, EJB, JMS technologies.java.io.Serializable interface by default.</td><td></td><td></td></tr>
+</table>
+
+		<p class=que id="40">40. Thread? Its Priorities?</p>
+		-Remember that all the threads carry normal priority when a priority is not specified.<br>
+-Priorities can be specified from 1 to 10. 10 being the highest, 1 being the lowest priority and 5 being the normal priority.<br>
+-Remember that the thread with highest priority will be given preference in execution. But there is no guarantee that it will be in running state the moment it starts.<br>
+-Always the currently executing thread might have the higher priority when compared to the threads in the pool who are waiting for their chance.<br>
+-It is the thread scheduler which decides what thread should be executed.<br>
+-th.setPriority() can be used to set the priorities for the threads.<br>
+-Remember that the priorities should be set before the threads start method is invoked.<br>
+You can use the constants, MIN_PRIORITY,MAX_PRIORITY and NORM_PRIORITY for setting priorities.
+		<p class=que id="41">41. What is the difference between Servlet and JSP</p>
+		<table border="2"> 
+	<col width="470"><col width="470">
+	<th>Servlet</th><th>JSP</th>
+  <tr><td>Servlets are Java programs that are already compiled which also creates dynamic web content.(JSP=Java+html)</td><td>JSP is a webpage scripting language that can generate dynamic content.(Servlet=html+Java)</td></tr>
+  <tr><td>Servlet are nothing but the server side java class.</td><td>JSP technology as the Servlet application program interface (API).Java Server Page (JSP) is a technology for controlling the content or appearance of Web pages through the use of servlets, small programs that are specified in the Web page and run on the Web server to modify the Web page before it is sent to the user who requested it.</td></tr>
+  <tr><td>In MVC, Servlet act as a Controller.</td><td>In MVC, jsp act as a view.</td></tr>
+  <tr><td>Servlet runs faster compared to JSP.</td><td>JSP run slower compared to Servlet as it takes compilation time to convert into Java Servlets.</td></tr>
+  <tr><td>There is no such custom tag facility in servlets.</td><td>The advantage of JSP programming over servlets is that we can build custom tags which can directly call Java beans.we can use a lot of tags such as action tags, jstl, custom tags etc. </td></tr>
+  <tr><td>Servlets, the Programmer compiles manually a Servlet file and deploys a .class file in server.</td><td>First time when JSP is called it is compiled to a Servlet. Subsequent calls to the same JSP will call the same compiled servlet (instead of converting the JSP to servlet), Ofcourse, the JSP code would have not modified. This increases performance.</td></tr>
+  <tr><td>The servlet code needs to be updated and recompiled if we have to change the look and feel of the application.</td><td>If JSP page is modified, we don't need to recompile and redeploy the project.So development is faster than Servlet.</td></tr>
+
+</table>
+		<p class=que id="42">42. What is Process vs thread?</p>
+		<p class=que id="43">43. notify vs notifyall</p>
+		<table border="2"> 
+			<col width="470"><col width="470">
+			<th>notify()</th><th>notifyAll()</th>
+			<tr><td>Wakes up a single thread that is waiting on this object's monitor. If any threads are waiting on this object, one of them is chosen to be awakened. The choice is random and occurs at the discretion of the implementation. A thread waits on an object's monitor by calling one of the wait methods.</td><td>Wakes up all threads that are waiting on this object's monitor. A thread waits on an object's monitor by calling one of the wait methods.</td></tr>
+			<tr><td>When we called notify() -
+Only one of the two waiting thread was notified (i.e. Thread-1 and Thread-2 were waiting and only Thread-1 was notified)</td><td>When we called notifyall() -
+Both of two waiting threads were notified (i.e. Thread-1 and Thread-2 were waiting and both were notified)</td></tr>
+		</table>
+		A thread is an independent path of execution within a program. Many threads can run concurrently within a program. Every thread in Java is created and controlled by the java.lang.Thread class.
+		<p class=que id="44">44. What is Multithreading?</p>
+		Multithreading refers to two or more tasks executing concurrently within a single program.
+		<p class=que id="45">45. What is super, this, strictfp, instanceOf, accertion,transient?</p>
+		<b>transient:</b>&nbsp;If you don't want to serialize any data member of a class, you can mark it as transient.<br>
+		<p class=que id="46">46. what is yeild, join and sleep</p>
+		<table border="2">
+			<col width="313"><col width="313"><col width="313">
+			<tr><th>yield</th><th>join</th><th>sleep</th></tr>
+			<tr><td>yeild method uses to pause current executing thread to give the chance for waiting thread of same priority if there is no waiting thread or all waiting thread have low priority then same thread can countinue its execution.</td><td>if a thread wants to wait until compliting some other thread then we should go for join method.</td><td>If a thread dont want to perform any operation for a perticular amount of time then we should go for sleep()</td></tr>
+			<tr><td>if the multiple threads are waiting with same priority thern we can expet exact. It depends on thread schedular.</td><td>for example if a thread t1 wants to wait until compliting t2 then t1 has to call t2.join();</td><td></td></tr>	
+			<tr><td>If thread is yield when it get chance again that also we can say exactlly.</td><td>If t1 executes t2.join(); then immediatelly t1 will be entered into waiting state until t2 complits.Once t2 complits then t1 continue its execution.</td><td></td></tr>
+
+
+      
+		</table>
+		<p class=que id="47">47. What is the difference between Final, Finally and Finalize?</p>
+		<table border="2">
+			<col width="313"><col width="313"><col width="313">
+			<th>final</th><th>finally</th><th>finalize</th>
+			<tr><td>final keyword is a modifier, which means different things if used among class, variable and methods.</td><td>Similarly finally is used in exception handling.</td><td>while finalizer is a method, which gets called when garbage collector collects objects.</td></tr>
+		  </table>
+		<p class=que id="48">48. What is the difference between String, StringBuffer and StringBuilder</p>
+		<table border="2"> <col width="313">
+  <col width="313"><col width="313">
+        	<th>String</th><th>StringBuffer</th><th>StringBuilder</th>
+<tr><td>String is a immutable. </td><td>Stringbuffer is a mutable.</td><td>String builder also mutable.    </td></tr>
+
+<tr><td>it is thread safe</td><td>StringBuffer is synchronized i.e. thread safe.</td><td>StringBuilder is non-synchronized i.e. not thread safe.</td></tr>
+<tr><td>String is slow and consumes more memory when you concat too many strings because every time it creates new instance.</td><td>strings because every time it creates new instance.	StringBuffer is fast and consumes less memory when you cancat strings.</td><td></td></tr>
+<tr><td>String class overrides the equals() method of Object class. So you can compare the contents of two strings by equals() method.</td><td>StringBuffer class doesn't override the equals() method of Object class.</td><td>StringBuilder is more efficient than StringBuffer.</td></tr>
+</table>
+		<p class=que id="49">49. What is Inner classes Nested classes and Annonymous Classes</p>
+		<table border="2"> 
+	<col width="313"><col width="313"><col width="313">
+	<th></th><th></th><th></th>
+</table>
+			<p class=que id="50">50.Why String is Special Class in Java?</p>
+String is a class.in the java.lang.Stirng.java<br>
+String is immutable class. Immutable means onece it instantiated its state can not be changed.<br>
+Its Final:final menas you can not extend the class and you can not override its behaviour.<br>
+In java String are stored in verry Special area String constant pool which is in the method area.<br>
+It achives memory optimization.By using String constant pool and iterna();<br>
+intern() is a native method.<br>
+<b>ex.</b><br>
+public class StringInternDemo<br>
+{<br>
+	public static void main(String[] args) <br>
+	{<br>
+		String s1 = new String("Hellow");//Goes into Heap memory as like other objects<br>
+		String s2 = "Hellow";//Goes to String Constant Pool which is in method area.<br>
+		String s3 = "Hellow";//Goes to String Constant Pool which is in method area.<br>
+
+		System.out.println("s1==s2 ????"+(s1==s2));//it checks the reference are same or not and output will be false<br>
+		System.out.println("s2==s3 ????"+(s2==s3));//output will be true<br>
+	}<br>
+}<br>
+<p class=que id="51">51. What is difference between Throw, Throws and Throwable</p>
+<table border="2"> 
+	<col width="313"><col width="313"><col width="313">
+	<th>throw</th><th>throws</th><th>throwable</th>
+	<tr><td>throw is a keyword in java which is used to throw an exception manually. Using throw keyword, you can throw an exception from any method or block. But, that exception must be of type java.lang.Throwable class or it’s sub classes.</td><td>throws is also a keyword in java which is used in the method signature to indicate that this method may throw mentioned exceptions. The caller to such methods must handle the mentioned exceptions either using try-catch blocks or using throws keyword.</td><td>Throwable is a super class for all types of errors and exceptions in java. This class is a member of java.lang package. Only instances of this class or it’s sub classes are thrown by the java virtual machine or by the throw statement. The only argument of catch block must be of this type or it’s sub classes. If you want to create your own customized exceptions, then your class must extend this class.</td></tr>
+ <table></table>
+<p class=que id="52">52. What is difference between Array, Collection and Generics</p>
+<table border="2"> <col width="313">  <col width="313"><col width="313">
+        	<th>Array</th><th>Collection</th><th>Generics</th>
+<tr><td>Array is the collection of similar data types.</td><td>Collection is the group of individual objects as a sigle entity.</td><td>Generics are a facility of generic programming that were added to the Java programming language in 2004 within J2SE 5.0. They allow "a type or method to operate on objects.</td></tr>
+<tr><td>Arrays are fixed in size.</td><td>Collections are growable in nature.</td><td><b>Strong type check at compile time:</b>A Java compiler applies strong type checking to generic code and issues errors if the code violates type safety. Fixing compile-time errors is easier than fixing runtime errors, which can be difficult to find.</td></tr>
+<tr><td>Arryas are not recommnetde with respect to memory.</td><td>Collections are recommended.</td><td><b>Type casting is not required:</b> There is no need to typecast the object.</td></tr>
+<tr><td>With respect to performance recommended.</td><td>with respect to performance not recommended.</td><td>Enabling programmers to implement generic algorithms.
+By using generics, programmers can implement generic algorithms that work on collections of different types, can be customized, and are type safe and easier to read.</td></tr>
+
+<tr><td>Can hold homogenious objects.</td><td>Can hold both homo and hetrogenious objects.</td><td></td></tr>
+<tr><td>Can hold objects and premitive.</td><td>Only objects can hold.</td><td></td></tr>
+<tr><td>Not based on any standard underlying data structure. so no inbuilt methods support.</td><td>Based on Standard data structure. Hence get the method of standard data structure.</td><td></td></tr>
+</table>
+<p class=que id="53">53. What is difference between Servlet(I), GenericServletand HttpServlet?</p>
+
+<table border="2"> 
+	<col width="313"><col width="313"><col width="313">
+	<th>Servlet(I)</th><th>Generic Servlet</th><th>HttpServlet</th>
+  <tr><td>javax.servlet.Servlet (Interface)</td><td>javax.servlet.GenericServlet (Abstract Class)</td><td>javax.servlet.http.HttpServlet (Abstract class)</td></tr>
+  <tr><td>Servlet (I) have five methods.<br> <b>1.</b>public void init(ServletConfig sc) throws ServletException<br><b>2.</b>public void ServletConfit getServletConfig()<br><b>3.</b>public void Service(ServletRequest req, ServletResponse res)<br><b>4.</b>public String getServletInfo()<br><b>5.</b>public void destroy()</td><td>Its a child class of servlet interface. It is abstract class having empty implementation for four methods of servlet.One abstract method i.e abstract Service (Servlet req, Servlet res)</td><td>Better way is extending HttpServlet and need not to override any methods as HttpServlet contains no abstract methods. Eventhough the HttpServlet does not contain any abstract methods, it is declared as abstract class by the Designers to not to allow the Programmer to create an object directly because a Servlet object is created by the system (here system is Servlet Container).</td></tr>
+  <tr><td>Programmers implement Servlet interface who would like to develop their own container.</td><td>It was used by the Programmers when the Web was not standardized to HTTP protocol. It is protocol independent; it can be used with any protocol, say, SMTP, FTP, CGI including HTTP etc.</td><td>eing subclass of GenericServlet, the HttpServlet inherits all the properties (methods) of GenericServlet. So, if you extend HttpServlet, you can get the functionality of both.</td></tr>
+
+
+  <tr><td>We have to implement all five methods</td><td>Generic Servlet only supports  service() method.</td><td>HttpServlet supports also   doGet(),doPost(),doPut(),doDelete(),doHead(),doTrace(),doOptions()etc.</td></tr>
+  <tr><td></td><td>when It was used by the Programmers the Web was not standardized to HTTP protocol yet so. It handles only simple plane request.It is protocol independent; it can be used with any protocol, say, SMTP, FTP, CGI including HTTP etc. </td><td>When HTTP protocol was developed by W3C. HttpServlet is protocol dependent and used specific to HTTP protocol. HttpServlet supports also   doGet(),doPost(),doPut(),doDelete(),doHead(),doTrace(),doOptions()etc.</td></tr>
+  <tr><td></td><td></td><td></td></tr>
+
+</table>
+
+<p class=que id="54">54. What is difference between ArryList, LinkList and Vector</p>
+<table border="2"> 
+	<col width="313"><col width="313"><col width="313">
+	<th>ArrayList</th><th>LinkdeList</th><th>Vector</th>
+  <tr><td>Best for the retrival</td><td>Worst in retrival</td><td>Vector is synchronized</td></tr>
+
+
+  <tr><td>worst in middle (insert /delete)</td><td>Best in middle (insert / delete)</td><td>Vector is one of those classes which comes with JDK 1.0</td></tr>
+  <tr><td>Underlying DataStructure is growable</td><td>Underlying DataStructure is doubly linklist</td><td>Maintain insertion order allows null.</td></tr>
+  <tr><td>Implements random access</td><td>Not random access</td><td>Vector and ArrayList are index based and backed up by an array internally.</td></tr>
+</table>
+<p class=que id="55">55. What is difference between Method area, heap and stack</p>
+<table border="2"> 
+	<col width="313"><col width="313"><col width="313">
+	<th>Method Area</th><th>Heap Area</th><th>Stack Area</th>
+  <tr><td>Mehod area where the binary file data loaded</td><td>Object of the class is loaded.</td><td>stack area is per thread in jvm</td></tr>
+</table>
+<p class=que id="56">56. What is difference between OOPS POP and Object Based Programming.</p>
+<table border="2"> <col width="313">
+  <col width="313"><col width="313">
+        	<th>Object Oriented</th><th>Procedure Oriented</th><th>Object Based</th>
+<tr><td>Object-oriented programming (OOP) is a programming language model organized around objects rather than "actions" and data rather than logic.</td><td>Historically, a program has been viewed as a logical procedure that takes input data, processes it, and produces output data.</td><td>Object based programming language follows all the features of OOPs except Inheritance.</td></tr>
+<td>Simula is considered as the first object-oriented programming language. Smalltalk is considered as the first truely object-oriented programming language.</td><td>C, C++</td><td>JavaScript and VBScript are examples of object based programming languages.</td></tr>
+</table>
+	
+<p class=que id="57">57. Method Overloading Ambiguity?</p>
+public class FirstClass<br>
+{<br>
+	public static void main(String[] args) <br>
+	{<br>
+		System.out.print(add(2,3));<br>
+		System.out.print(add(2.0,3.0));<br>
+	}<br>
+	pubic static double add(int a, double b)<br>
+	{<br>
+		System.out.println("Integer");<br>
+		return (a+b);<br>
+	}<br>
+	pubic static double add(double a, int b)<br>
+	{<br>
+		System.out.println("double");<br>
+		return (a+b);<br>
+	}<br>
+}<br>
+		
+		<p class=que id="58">58. what is the difference between J2SE, J2EE and J2ME</p>
+		J2SE: Intro, Oops, String, IO, Networking, GUI<br>
+		J2EE: Servlets, JSP, EJB, Services:JNDI, JTA, JCA<br>
+		J2ME: Mobile Applications<br>
+		Frameworks: Struts, Hibernate, Spring, JSF
+		<p class=que id="59">59. Explain the workig of VarArgs</p>
+		<p class=que id="60">60. what is MVC Pattern</p>
+		<p class=que id="61">61. what is EJB</p>
+		<p class=que id="62">62. what is Hibernate</p>
+		<p class=que id="63">63. what is Struts</p>
+		<p class=que id="64">64. what is Spring</p>
+    <p class=que id="65">65. Here are a few more of the most important “omissions” from C++</p>
+    :
+
+<br>- Java does not include structures or unions. These were felt to be redundant
+
+since the class encompasses them.
+
+<br>- Java does not support operator overloading. Operator overloading is sometimes
+
+a source of ambiguity in a C++ program, and the Java design team felt that it
+
+causes more trouble than benefit.
+
+<br>- Java does not include a preprocessor nor does it support the preprocessor
+
+directives. The preprocessor plays a less important role in C++ than it does
+
+in C. The designers of Java felt that it was time to eliminate it entirely.
+
+<br>- Java does not perform any automatic type conversions that result in a loss of
+
+precision. For example, a conversion from long integer to integer must be
+
+explicitly cast.
+
+<br>- All the code in a Java program is encapsulated within one or more classes.
+
+Therefore, Java does not have what you normally think of as global variables
+
+or global functions.
+
+<br>- Java does not allow default arguments. In C++, you may specify a value
+
+that a parameter will have when there is no argument corresponding to
+
+that parameter when the function is invoked. This is not allowed in Java.
+
+<br>- Java does not support the inheritance of multiple superclasses by a subclass.
+
+<br>- Although Java supports constructors, it does not have destructors. It does,
+
+however, add the finalize( ) function.
+
+<br>- Java does not support typedef.
+
+<br>- It is not possible to declare unsigned integers in Java.
+
+<br>- Java does not allow the goto.
+
+<br>- Java does not have the delete operator.
+
+<br>- The << and >> in Java are not overloaded for I/O operations.
+
+<br>- In Java, objects are passed by reference only. In C++, objects may be passed by
+
+value or by reference.
+<p class=que id="66">66. what is CAFEBABE or magic code</p>
+Following is the explanation given by the father of java James Gosling: 
+-------------------------------------------------------------------- <br>
+As far as I know, I´m the guilty party on this one. I was totally unaware of the NeXT connection. The small number of interesting HEX words is probably the source of the match. As for the derivation of the use of CAFEBABE in Java, it´s somewhat circuitous: 
+
+We used to go to lunch at a place called St Michael´s Alley. According to local legend, in the deep dark past, the Grateful Dead used to perform there before they made it big. It was a pretty funky place that was definitely a Grateful Dead Kinda Place. When Jerry died, they even put up a little Buddhist-esque shrine. When we used to go there, we referred to the place as Cafe Dead. 
+
+Somewhere along the line it was noticed that this was a HEX number. I was re-vamping some file format code and needed a couple of magic numbers: one for the persistent object file, and one for classes. I used CAFEDEAD for the object file format, and in grepping for 4 character hex words that fit after CAFE (it seemed to be a good theme) I hit on BABE and decided to use it. 
+
+At that time, it didn´t seem terribly important or destined to go anywhere but the trash-can of history. So CAFEBABE became the class file format, and CAFEDEAD was the persistent object format. But the persistent object facility went away, and along with it went the use of CAFEDEAD - it was eventually replaced by RMI.<br><br>
+
+<p class=que id="67">67. What is recursion.</p>
+Recursion is a basic programming technique you can use in Java, in which a method calls itself to solve some problem. A method that uses this technique is recursive. Many programming problems can be solved only by recursion, and some problems that can be solved by other techniques are better solved by recursion.
+<p class=que id="68">68. What is deadlock.</p>
+Deadlock describes a situation where two or more threads are blocked forever, waiting for each other.
+or we can say Deadlock can occur in a situation when a thread is waiting for an object lock, that is acquired by another thread and second thread is waiting for an object lock that is acquired by first thread. Since, both threads are waiting for each other to release the lock, the condition is called deadlock.
+<p class=que id="69">69. why is hashcode method in java.</p>
+<p class=que id="70">70. What is Assertion keyword in java</p>
+You can use assertions to detect errors that may otherwise go unnoticed. Assertions contain Boolean expressions that define the correct state of your program at specific points in the program source code. The designers of the Java platform, however, didn't include support for assertions. Perhaps they viewed exceptions as a superior feature, allowing you to use try/ catch/ finally to throw an exception instead of aborting the program as in assertions. But the Java 2 Platform, Standard Edition (J2SE) release 1.4, has introduced a built-in assertion facility. <br>
+It is mainly used for testing purpose.it's been rarely used specially if you have not writing unit test using JUnit.
+<p class=que id="71">71. Can abstract class have a constructor.</p>
+Yes, abstract class can declare and define constructor in Java. Since you can not create instance of abstract class,  constructor can only be called during constructor chaining, i.e. when you create instance of concrete implementation class. 
+
+Now some interviewer, ask what is the purpose of constructor, if you can not instantiate abstract class? Well, it can still be used to initialize common variables, which are declared inside abstract class, and used by various implementation. 
+
+Also even if you don’t provide any constructor, compiler will add default no argument constructor in an abstract class, without that your subclass will not compile, since first statement in any constructor implicitly calls super(), default super class constructor in Java.
+<br><br>
+</div>
+		
+	</body>
+</html>
