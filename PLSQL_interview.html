@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8" http-equiv="content-type">
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="Tutorials.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>
+		Home Page
+	</title>
+	</head>
+	<body>		
+		<div id=header1 class=header  style="align-items: center;justify-content: center;">
+			<h1>Tutorials</h1>
+		</div>
+		<div>
+			<img id= logo src="images.png" alt="logo">
+		</div>
+		
+		<div id=ul1 class=mynavul>
+	<ul>
+		<li><a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a></li>
+		<li><a href="C.html">C</a></li>
+		<li><a href="C++.html">C++</a></li>
+		<li><a href="Java.html">Java</a></li>
+		<li><a href="Android.html">Android</a></li>
+		<li><a href="BigData.html">BigData</a></li>
+		<li><a href="Cloud.html">Cloud</a></li>
+		<li><a href="HTML5.html">HTML5</a></li>
+		<li><a href="CSS3.html">CSS3</a></li>
+		<li><a href="JavaScript.html">JavaScript</a></li>
+		<li><a href="JS Angular.html">JS Angular</a></li>
+		<li><a href="XML.html">XML</a></li>
+		<li><a href="AJAX.html">AJAX</a></li>
+		<li><a href="JSON.html">JSON</a></li>
+		<li><a href="ASP.html">ASP</a></li>
+		<li><a href="PHP.html">PHP</a></li>
+		<li><a href="jQuery.html">jQuery</a></li>
+		<li><a href="Bootstrap.html">Bootstrap</a></li>
+		<li><a href="C#.html">C#</a></li>
+		<li><a href="VB.NET.html">VB.NET</a></li>
+		<li><a href="Python.html">Python</a></li>
+		<li><a href="PLSQL.html">PL\SQL</a></li>
+
+	</ul>
+</div>
+	<div id=leftmenus>
+<ol class="r">
+		<li><a href=" ">Intro</a></li>	
+		<li><a href="PLSQL_interview.html">PLSQL Interview</a></li>			
+		</ol>
+		
+	</div>
+	
+	<div id=section>
+	
+
+
+	
+	
+		<p class=que id="1">1. What is the difference between</p>
+		<table border = "2">
+<tr><th>PRIMARY KEY</th> <th>UNIQUE KEY</th> <th>FOREIGN KEY</th>  <th>CANDIDATE KEY</th></tr>
+<tr><td>	It doesn’t allow Null values.
+Because of this we refer
+PRIMARY KEY = UNIQUE KEY + Not Null CONSTRAINT</td> <td>
+Because of this we refer
+PRIMARY KEY = UNIQUE KEY + Not Null CONSTRAINT	Allows Null value. But only one Null value.</td><td></td><td></td></tr>  
+<tr><td>A table can have only one PRIMARY KEY Column[s]</td><td>Column[s]	A table can have more than one UNIQUE Key Column[s]</td></tr>
+<tr><td>	By default it adds a clustered index</td><td>By default it adds a UNIQUE non-clustered index</td></tr>
+		</table>
+		
+		
+		<p>
+<b>ORACLE PL SQL INTERVIEW QUESTION ANSWER</b><br/>
+<b>1. Tell me about yourself</b><br/>
+<b>2. What is difference between TRUNCATE & DELETE?</b><br/>
+<b>3. Truncate is a DDL command</b><br/>
+<b>4. We can remove bulk amount of records at a time</b><br/>
+<b>5 We can't rollback the records</b><br/>
+<b>6. Release the space in database</b><br/>
+<b>7. Truncate reset the high water mark</b><br/>
+<b>8. Truncate explicitly commit</b><br/>
+<b>9. Delete is a DML command</b><br/>
+<b>10. We can delete record by record</b><br/>
+<b>11. We can rollback the records</b><br/>
+<b>12. Can’t release the memory in database</b><br/>
+<b>13. Delete can’t reset the water mark</b><br/>
+<b>14. Delete implicitly commit(OR)</b><br/>
+Ans: Differences:
+TRUNCATE commits after deleting entire table i.e., cannot be rolled back.
+Database triggers do not fire on TRUNCATE DELETE allows the filtered deletion.
+Deleted records can be rolled back or committed.Database triggers fire on DELETE.<br/>
+<b>15. Difference between view and materialized view</b><br/>
+Difference
+View is a logical table
+View can hold the query
+We can’t create indexes on view
+View will create security purpose
+Mv is a physical table
+Mv can hold the query with refresh data
+We can create indexes on mv
+Mv will create performance issues<br/>
+<b>16. Difference between procedure and function?</b><br/>
+Procedure:
+Procedure allow the DML statements without any restrictions
+We can’t call procedure in sql language
+We can store images in stored procedure
+Function:
+Function not allow the DML statements (If you need to use we can use pragma)
+We can call Function in sql language
+Function can’t store images<br/>
+<b>17. What is cursor?</b><br/>
+Cursor is private sql area which is used to execute sql statements and store processing information<br/>
+<b>18. What is explicit and implicit cursor and examples?</b><br/>
+The implicit cursor is automatically declared by oracle every time an sql statement is executed whenever you issue a sql statement, the oracle server opens an area of memory in which the command is parsed and executed. Every implicit cursor attribute start with sql%.
+An explicit cursor is created and managed by the user. And used for multi row select statement.<br/>
+<b>19.What do u understand by database and what is objects in oracle</b><br/>
+Ans: A database is defined as a collection of meaningful data. Objects in oracle means Table, Views, Procedures, Triggers, Synonym etc<br/>
+<b>20.What is a table, view, snapshot?</b><br/>
+Table: A table is the basic unit of data storage in an Oracle database. The tables of a database hold all of the user accessible data. Table data is stored in rows and columns.a
+Views: A view is a virtual table. Every view has a query attached to it. (The query is a SELECT statement that identifies the columns and rows of the table(s) the view uses.)
+Snapshot: A Snapshot is a recent copy of a table from database or in some cases ,a subset of rows/columns of a table. It is also known as Materialized view.<br/>
+<b>21. Do a view contain data?</b><br/>
+Ans: Views do not contain or store data</br>
+<b>What are the advantages of views?</b>
+Ans: Provide an additional level of table security, by restricting access to a predetermined set of rows and columns of a table.
+- Hide data complexity.
+- Simplify commands for the user.
+- Present the data in a different perspective from that of the base table.
+- Store complex queries.<br/>
+<b>10.What is an Oracle sequence?</b></br>
+Ans: A Sequence generates a serial list of unique numbers for numerical columns of a database's tables.</br>
+<b>11.What is a synonym?</b></br>
+Ans: A synonym is an alias for a table, view, sequence or program unit.</br>
+<b>12.What are the types of synonyms?</b></br>
+Ans: There are two types of synonyms private and public.</br>
+<b>13.What is a private synonym?</b></br>
+Ans: Only its owner can access a private synonym.</br>
+<b>14.What is a public synonym?</b></br>
+Ans: Any database user can access a public synonym</br></b>
+</br><b>15.What is an Oracle index?</b><br/>
+Ans: An index is an optional structure associated with a table to have direct access to rows, which can be created to increase the performance of data retrieval. Index can be created on one or more columns of a table. Index may also be considered as a ordered list of content of a column.
+</br><b>16.What is a schema?</br></b>
+Ans: The set of objects owned by user account is called the schema.
+</br><b>17.What is a join? Explain the different types of joins?</br></b>
+Ans: Join is a query, which retrieves related columns or rows from multiple tables.
+Self Join - Joining the table with itself.
+Equi Join - Joining two tables by equating two common columns.
+Non-Equi Join - Joining two tables by not equating two common columns.
+Outer Join - Joining two tables in such a way that query can also retrieve rows that do not have corresponding join value in the other table.
+</br><b>18.Difference between SUBSTR and INSTR?</br></b>
+Ans: INSTR (String1, String2 (n, (m)), INSTR returns the position of the m-th occurrence of the string 2 in string1. The search begins from nth position of string1.
+SUBSTR (String1 n, m) SUBSTR returns a character string of size m in string1, starting from n-th position of string1.
+</br><b>19.What is difference between CHAR and VARCHAR2? What is the maximum SIZE allowed for each type?</br></b>
+Ans: CHAR pads blank spaces to the maximum length. VARCHAR2 does not pad blank spaces. For CHAR the maximum length is 255 and 2000 for VARCHAR2
+</br><b>20.How to access the current value and next value from a sequence?</br></b>
+Ans: Current Value : Sequence name.CURRVAL
+Next Value sequence name.NEXTVAL.
+</br><b>21.What are the components of physical database structure of Oracle database?</br></b>
+Ans: Oracle database is comprised of three types of files. One or more datafiles, two are more redo log files, and one or more control files.
+</br><b>22.Query to delete duplicate row from a table</br></b>
+Ans: Delete from emp where rowid not in (Select min(rowid) from emp Groupby emp_dept)
+</br><b>23.What is a cursor its attribute and types?</br></b>
+Ans: The Oracle Engine uses a work area for its internal processing in order to execute an SQL statement. This work area is private to SQL operation and is called Cursor.
+Types of Cursor:
+Implicit Cursor: If the Oracle engine opened a cursor for its internal processing then it is know as implicit cursor. It is invoked implicitly.
+Explicit Cursor: A cursor which is opened for processing data through a PL/SQL block is know as Explicit Cursor.
+Attributes Of a Implicit Cursor:
+%ISOPEN —returns TRUE if cursor is open else FALSE.
+Syntax is SQL%ISOPEN
+%ROWCOUNT--- returns number of records processed from cursor syntax is SQL %ROWCOUNT %FOUND---- returns TRUE if record is fetched successfully else FALSE, syntax is SQL%FOUND %NOTFOUND-- returns TRUE if record is not fetched successfully else FALSE syntax is SQL%NOTFOUND Attributes Of a Explicit Cursor %ISOPEN—returns TRUE if cursor is open else FALSE. Syntax is cursorname%ISOPEN %ROWCOUNT--- returns number of records processed from cursor syntax is cursorname %ROWCOUNT %FOUND---- returns TRUE if record is fetched successfully else FALSE, syntax is cursorname %FOUND %NOTFOUND-- returns TRUE if record is not fetched successfully else FALSE syntax is cursorname %NOTFOUND
+</br><b>24.What are inline views?</br></b>
+Ans: Inline view is Sub-query(queries written in a where clause of SQL statements.). It is a query whose return values are used in filtering conditions of the main query.
+</br><b>25.How can we refresh a snapshot?</br></b>
+Ans: Refreshing Snapshots: A snapshot can be refreshed automatically or manually. If a snapshot has to be automatically refreshed then refresh clause must be specified in the CREATE SNAPSHOT. The FAST, COMPLETE or FORCE specifies the type of REFRESH used for automatic refresh. For automatic refresh we can specify the START WITH and NEXT parameter to decide the time interval for the next update.
+COMPLETE refresh: In complete refresh the snapshot query is executed and places the result in the snapshot.
+FAST refresh : In this only the changes made to the master table will be updated to the snapshot. The corresponding log file is used to update. Fast refresh will be done only if * The snapshot is a simple snapshot. * The snapshot's master table has a snapshot log \ * The snapshot log was created before the snapshot was last refreshed or created.
+FORCE refresh : In this ORACLE decides how to refresh the snapshot at the scheduled refresh time. If a fast refresh is possible it performs a fast refresh else it does a complete refresh.
+</br><b>26.What is a tablespace?</br></b>
+Ans: A database is divided into Logical Storage Unit called tablespaces. A tablespace is used to grouped related logical structures together.
+</br><b>27.Is sequence cyclic?</br></b>
+Ans: Yes
+</br><b>28.Select nth highest value from a list of values ?</br></b>
+Ans: SELECT a.emp_name,a.sal FROM emp a WHERE &n - 1= (SELECT COUNT(DISTINCT sal) FROM emp b WHERE b.sal > a.sal )
+</br><b>29.What are triggers and its types?</br></b>
+Ans: A trigger is a piece of code attached to a table that is executed after specified DML statements executed on that table. There are 12 types of triggers in PL/SQL that consist of combinations of the BEFORE, AFTER, ROW, STATEMENT, TABLE, INSERT, UPDATE, DELETE and ALL key words: For eg: BEFORE ALL ROW INSERT AFTER ALL ROW INSERT BEFORE INSERT AFTER INSERT
+</br><b>30.What is the maximum number of triggers, can apply to a single table?</br></b>
+Ans: 12 triggers(Oracle).
+</br><b>31.Difference between rowid and rownum?</br></b>
+Ans: ROWID is pseudo column in every table. The physical address of the rows is use to for the ROWID.IN HEXADECIMAL representation, ROWID is shown as 18 character string of the following format BBBBBBBBB.RRRR.FFFF (block, row, file) FFFF is the fileid of the datafile that contains the row. BBBBBBBBB is the address of the datablock within the datafile that contains the row. RRRR is the ROW NUMBER with the data block that contains the row. They are unique identifiers for the any row in a table. They are internally used in the construction of indexes.
+Rownum is the sequential number of rows in the result set object.
+</br><b>32.What is the fastest query method for a table?</br></b>
+Ans: By rowid
+</br><b>33.What is the difference of a LEFT JOIN and an INNER JOIN statement?</br></b>
+Ans: A LEFT JOIN will take ALL values from the first declared table and matching values from the second declared table based on the column the join has been declared on. An INNER JOIN will take only matching values from both tables
+</br><b>34.How can I avoid a divide by zero error?</br></b>
+Ans: Use the DECODE function. This function is absolutely brilliant and functions like a CASE statement, and can be used to return different columns based on the values of others.
+</br><b>35.Is view updatable?</br></b>
+Ans: Only if the view is a simple horizontal slice through a single table.
+</br><b>36.What is Dual ?</br></b>
+Ans: The DUAL table is a table with a single row and a single column used where a table is syntactically required.
+</br><b>37.What is the difference between CHAR and VARCHAR ?</br></b>
+Ans: CHAR is fixed length character type at storage level, and that VARCHAR will be variable length.
+</br><b>38.Do we use commit in triggers.</br></b>
+Ans: No
+</br><b>39.How will the fetch the last inserted record in any table ?</br></b>
+Ans: select column 1, column 2.... From where rowid = (select max(rowid) from table);
+</br><b>40.What are constraints and its types?</br></b>
+Integrity Constraint : An integrity constraint is a declarative way to define a business rule for a column of a table. An integrity constraint is a statement about a table's data that is always true.
+Types of integrity constraints : The following integrity constraints are supported by ORACLE:
+1. NOT NULL : disallows nulls (empty entries) in a table's column
+2. UNIQUE : disallows duplicate values in a column or set of columns
+3. PRIMARY KEY : disallows duplicate values and nulls in a column or set of columns
+4. FOREIGN KEY : requires each value in a column or set of columns match a value in a related table's UNIQUE or PRIMARY KEY.
+5. CHECK : disallows values that do not satisfy the logical expression of the constrain
+</br><b>41.What is Referential Integrity and Referential integrity constraint ?</br></b>
+Ans: Referential Integrity : Referential integrity defines the relationships among different columns and tables in a relational database. It’s called referential integrity because the values in one column or set of columns refer to or must match the values in a related column or set of columns.
+A referential integrity constraint requires that for each row of a table, the value in the foreign key matches a value in a parent key.
+</br><b>42.What is groups by and having clause? Explain with example</br></b>
+Ans: Group by clause tells oracle to group rows based on distinct values that exists for specified columns. The group by clause creates a data set , containing several sets of records grouped together based on condition.
+Having Clause: Having clause can be used with GROUP BY clause. Having imposes a condition on the group by clause which further filters the group created by the GROUP BY clause. Select ename,empno From Empl Group by empno having empno > 10;<br/>
+<br/><b>43.What are LOCKS? What are types of different types of Lock?</b><br/>
+Ans: Locks are mechanisms intended to prevent destructive interaction between users accessing ORACLE data. ORACLE uses locks to control concurrent access to data. Locks are used to achieve two important database goals : Consistency : Ensures that the data a user is viewing or changing is not changed (by other users) until the user is finished with the data. Integrity : Ensures that the database's data and structures reflect all changes made to them in the correct sequence.
+Types of Locks :
+1. Data Locks (DML)
+2. Dictionary Locks (DDL)
+3. Internal Locks and Latches
+4. Distributed Locks
+5. Parallel Cache Management Locks
+Data Locks : Row Level and Table Level Row Level : Exclusive Locks Table Level
+1. Row Share Table Locks (RS)
+2. Row Exclusive Table Locks (RX)
+3. Share Table Locks (S)
+4. Share Row Exclusive Table Locks (SRX)
+5. Exclusive Table Locks (X)
+Dictionary Locks :
+1. Exclusive DDL Locks
+2. Share DDL Locks
+3. Breakable Parse Locks Restrictiveness of Locks : In general, two levels of locking can be used in a multi-user database: • Exclusive Locks : An exclusive lock prohibits the sharing of the associated resource. The first transaction to exclusively lock a resource is the only transaction that can alter the resource until the exclusive lock is released. • Share Locks : A share lock allows the associated resource to be shared, depending on the operations involved (e.g., several users can read the same data at the same time). Several transactions can acquire share locks on the same resource. Share locks allow a higher degree of data concurrency than exclusive locks.<br/>
+<b>44.Difference between unique key,primary key and foreign key ?</b><br/>
+Ans: Foreign key: A foreign key is one or more columns whose values are based on the primary or candidate key values from another table. Unique key can be null; Primary key cannot be null.<br/>
+<b>45.What are Advantages of TRUNCATE Command over DELETE/DROP TABLE Command ?</b><br/>
+Ans: The TRUNCATE command provides a fast, efficient method for deleting all rows from a table or cluster.
+1. A TRUNCATE statement does not generate any rollback information and it commits immediately; it is a DDL statement and cannot be rolled back.
+2. A TRUNCATE statement does not affect any structures associated with the table being truncated (constraints and triggers) or authorizations (grants).
+3. A TRUNCATE statement also specifies whether space currently allocated for the table is returned to the containing tablespace after truncation.
+4. As a TRUNCATE statement deletes rows from a table (or clustered table), triggers associated with the table are not fired.
+5. Also, a TRUNCATE statement does not generate any audit information corresponding to DELETE statements if auditing is enabled. Instead, a single audit record is generated for the TRUNCATE statement being issued.<br/>
+<b>46.What are steps involved in Execution of SQL statements?</b><br/>
+Ans: STEPS IN EXECUTION OF SQL STATEMENTS :
+1. Create a cursor
+2. Parse the statement
+3. Describe Results
+4. Defining outputs
+5. Bind any variables
+6. Execute the statement
+7. Fetch rows of a query result<br/>
+<b>47.What do you mean by Parsing?</b><br/>
+Ans: Parsing : Parsing is the process of: 1. Translating a SQL statement, verifying it to be a valid statement 2. Performing data dictionary lookups to check table and column definitions 3. Acquiring parse locks on required objects so that their definitions do not change during the statement's parsing 4. Checking privileges to access referenced schema objects 5. Determining the execution plan to be used when executing the statement 6. Loading it into a shared SQL area 7. For distributed statements, routing all or part of the statement to remote nodes that contain referenced data<br/>
+<b>48.What is a HINT and what are types HINT?</b><br/>
+Ans: Hints are suggestions that you give the optimizer for optimizing a SQL statement. Hints allow you to make decisions usually made by the optimizer.
+TYPES OF HINTS :
+ALL_ROWS : The ALL_ROWS hint explicitly chooses the cost-based approach to optimize a statement block with a goal of best throughput.
+FIRST_ROWS : The FIRST_ROWS hint explicitly chooses the cost-based approach to optimize a statement block with a goal of best response time.
+FULL : The FULL hint explicitly chooses a full table scan for the specified table.
+ROWID : The ROWID hint explicitly chooses a table scan by ROWID for the specified table.
+CLUSTER : The CLUSTER hint explicitly chooses a cluster scan to access the specified table.
+HASH : The HASH hint explicitly chooses a hash scan to access the specified table.
+INDEX : The INDEX hint explicitly chooses an index scan for the specified table.
+AND_EQUAL: The AND_EQUAL hint explicitly chooses an execution plan that uses an access path that merges the scans on several single-column indexes. (You can specify multiple indexes through this hint) INDEX_ASC: The INDEX_ASC hint explicitly chooses an index scan for the specified table. If the statement uses an index range scan, ORACLE scans the index entries in ascending order of their indexed values.
+INDEX_DESC: The INDEX_DESC hint explicitly chooses an index scan for the specified table. If the statement uses an index range scan, ORACLE scans the index entries in descending order of their indexed values.
+ORDERED : The ORDERED hint causes ORACLE to join tables in the order in which they appear in the FROM clause.
+USE_NL : The USE_NL hint causes ORACLE to join each specified table to another row source with a nested loops join using the specified table as the inner table.
+USE_MERGE : The USE_MERGE hint causes ORACLE to join each specified table with another row source with a sort-merge join.<br/>
+<b>49.What do u mean by EXCEPTION_INIT Pragma ?</b><br/>
+Ans: EXCEPTION_INIT Pragma : To handle unnamed internal exceptions, you must use the OTHERS handler or the pragma EXCEPTION_INIT. A "pragma" is a compiler directive, which can be thought of as a parenthetical remark to the compiler. Pragmas (also called "pseudoinstructions") are processed at compile time, not at run time. They do not affect the meaning of a program; they simply convey information to the compiler. The predefined pragma EXCEPTION_INIT tells the PL/SQL compiler to associate an exception name with an Oracle error number. That allows you to refer to any internal exception by name and to write a specific handler for it. You code the pragma EXCEPTION_INIT in the declarative part of a PL/SQL block, subprogram, or package
+using the syntax PRAGMA EXCEPTION_INIT(exception_name, Oracle_error_number); where "exception_name" is the name of a previously declared exception. For internal exceptions, SQLCODE returns the number of the associated Oracle error. The number that SQLCODE returns is negative unless the Oracle error is "no data found," in which case SQLCODE returns +100. SQLERRM returns the message associated with the Oracle error that occurred. The message begins with the Oracle error code. For user-defined exceptions, SQLCODE returns +1 and SQLERRM returns the message “User-Defined Exception” unless you used the pragma EXCEPTION_INIT to associate the exception name with an Oracle error number, in which case SQLCODE returns that error number and SQLERRM returns the corresponding error message. The maximum length of an Oracle error message is 512 characters including the error code, nested messages, and message inserts such as table and column names.
+What do u mean by JSP query?
+Ans: JSP Query : The JSP Query is a standard query for number to words conversion, used especially for converting amount in number into equivalent amount in words. The query is as follows : Select to_char ( to_date ( ‘&no’, ‘J’ ), ‘JSP’ ) words from dual; For eg : Select to_char ( to_date ( '23949','j' ), 'JSP' ) "words" from dual; The value that can pass to &no cannot exceed 7 digits.<br/>
+<b>50.Describe Oracle database’s physical and logical structure ?</b><br/>
+Ans: Physical: Data files, Redo Log files, Control file. Logical : Tables, Views, Tablespaces, etc.
+<br/><b>51.What is “Check Constraints” and “with check options” and “Default Specification”?</b><br/>
+Ans: CHECK Integrity Constraints: A CHECK integrity constraint on a column or a set of columns requires that a specified condition be true or unknown (ie. Not false) for every row of the table. If a DML statement is issued so that the condition of the CHECK constraint evaluates to false, the statement is rolled back. With check Option: With Check option restricts inserts and updates performed through the view to prevent them from creating rows that the view cannot itself select .based on where clause of the create view statement. For eg: Create or replace view Women As select name from Employee Where Sex= ‘Female’ With Check Option; Default Specification It supplies a default value if column value is not specified on INSERT It can contain literals (constants) and SQL functions, USER, SYSDATE, sequence It cannot include references to any columns.
+<br/><b>52.What is the maximum no. Of columns a table can have ?</b><br/>
+Ans: 254(Oracle)
+<br/><b>53.Can a trigger written for a view ?</b><br/>
+Ans: No
+Consider a sequence whose currval is 1 and gets incremented by 1 by using the nextval reference we get the next number 2. Suppose at this point we issue an rollback and again issue a nextval. What will the output be ?
+Ans: 3
+<br/><b>54.Can you create index on view ?</b><br/>
+Ans: No
+<br/><b>55.What is the difference between alias and synonym ?</b><br/>
+Ans: Alias is temporary and used with one query. Synonym is permanent and not used as alias.
+What’s the length of SQL integer ?
+Ans: 32 bit length
+<br/><b>56.What is tkprof and how is it used?</b><br/>
+Ans: The tkprof tool is a tuning tool used to determine cpu and execution times for SQL statements. You use it by first setting timed_statistics to true in the initialization file and then turning on tracing for either the entire database via the sql_trace parameter or for the session using the ALTER SESSION command. Once the trace file is generated you run the tkprof tool against the trace file and then look at the output from the tkprof tool . This can also be used to generate explain plan output.
+<br/><b>57.What is explain plan and how is it used?</b><br/>
+Ans: The EXPLAIN PLAN command is a tool to tune SQL statements. To use it you must have an explain_table generated in the user you are running the explain plan for. This is created using the utlxplan.sql script. Once the explain plan table exists you run the explain plan command giving as its argument the SQL statement to be explained. The explain_plan table is then queried to see the execution plan of the statement. Explain plans can also be run using tkprof.
+<br/><b>58.What is The Dynamic Performance Tables?</b><br/>
+Ans: Throughout its operation, ORACLE maintains a set of "virtual" tables that record current database activity. These tables are called Dynamic performance tables. Because dynamic performance tables are not true tables, they should not be accessed by most users. However, database administrators can query these tables and can create views on the tables and grant access to those views to other users. The dynamic performance tables are owned by SYS and their names all begin with V_$. Views are created on these tables, and then synonyms are created for the views. The synonym names begin with V$.
+<br/><b>59.What is Savepoint ?</b><br/>
+Ans: Savepoints are intermediate markers that can be declared in long transactions that contain many SQL statements. By using savepoints, you can arbitrarily mark your work at any point within a long transaction. This allows you the option of later rolling back all work performed from the current point in the transaction to a declared savepoint within the transaction.
+<br/><b>60.What is Deadlocks?</b><br/>
+Ans: A deadlock is a situation that can occur in multi-user systems that causes some number of transactions to be unable to continue work. A deadlock can occur when two or more users are waiting for data locked by each other. It typically happens when each of two or more users are waiting to access a resource that another user has already locked. This creates a deadlock situation because each user is waiting for resources held by the other user. Eg Transaction 1 Time Point Transaction 2 UPDATE emp 1 UPDATE emp SET sal = sal*1.1 SET sal = 1342 WHERE empno = 1000; WHERE empno = 2000; UPDATE emp 2 UPDATE emp SET sal = sal*1.1 SET sal = 1342 WHERE empno = 2000; WHERE empno = 1000; ORA-00060 3 deadlock detected while waiting for resource
+<br/><b>61.What is Privilege ?</b><br/>
+Ans: A privilege is a right to execute a particular type of SQL statement or to access another user's object. Types of privileges : • system privileges • object privileges System Privileges : System privileges allow users to perform a particular systemwide action, or to perform a particular action on a particular type of object. E.g. Create Tablespace, Delete the row of any table, etc. Object Privileges : Object privileges allow users to perform a particular action on a specific object. E.g. Delete row of specific table, etc. Roles : Roles are named groups of related privileges that are granted to users or other roles. Advantages of Roles : 1. Reduced granting of privileges 2. Dynamic privilege management (Changing of privileges) 3. Selective availability of privileges (Enalbling/Disabling roles) 4. Application awareness (Enalbling/Disabling of roles by application)
+<br/><b>62.What is Two Phase Commit ?</b><br/>
+Ans: Two Phase Commit is a mechanism wherein ORACLE automatically controls and monitors the commit or rollback of a distributed transaction and maintains the integrity of the global database. The Phases of the Two-Phase Commit Mechanism :
+• Prepare phase : The global co-ordinator (initiating node) asks participants to prepare (to promise to commit or rollback the transaction, even if there is a failure).
+• Commit phase : If all participants respond to the co-ordinator that they are prepared, the co-ordinator asks all nodes to commit the transaction; if all participants cannot prepare, the co-ordinator asks all nodes to roll back the transaction.
+<br/><b>63.Explain about snapshots in detail?</b><br/>
+Ans: Snapshots are read-only copies of a master table (or multiple tables) located on a remote node. A snapshot can be queried, but not updated; only the master table can be updated. A snapshot is periodically refreshed to reflect changes made to the master table. A snapshot is a full copy of a table or a subset of a table that reflects a recent state of the master table. A snapshot is defined by a distributed query that references one or more master tables, view, or other snapshots. Simple vs. Complex Snapshots : Each row in a simple snapshot is based on a single row in a single remote table. Therefore, a simple snapshot's defining query has no GROUP BY or CONNECT BY clauses, or subqueries, joins, or set operations. If a snapshot's defining query contains any of these clauses or operations, it is referred to as a complex snapshot. Internals of Snapshot Creation: When a snapshot is created, several operations are performed internally by ORACLE: • ORACLE (at the snapshot node) creates a table to store the rows retrieved by the snapshot's defining query; this is the snapshot's base table. • ORACLE creates a read-only view on the SNAP$ table (base table) for queries issued against the snapshot. • ORACLE creates a second local view on the remote master table. It uses this view when it refreshes the snapshot. • Additionally, if the snapshot is a simple snapshot, ORACLE creates an index on the SNAP$ table. All of these internal objects are created in the schema of the snapshot. Do not alter, change data in, or delete these objects manually.
+<br/><b>64.What is Ref Cursor?</b><br/>
+Ans: A REF CURSOR is basically a data type. A variable created based on such a data type is generally called a cursor variable. A cursor variable can be associated with different queries at run-time. The primary advantage of using cursor variables is their capability to pass result sets between sub programs (like stored procedures, functions, packages etc.).
+<br/><b>65.What is row chaining, how does it happen?</b><br/>
+Ans: Row chaining occurs when a VARCHAR2 value is updated and the length of the new value is longer than the old value and won’t fit in the remaining block space. This results in the row chaining to another block. It can be reduced by setting the storage parameters on the table to appropriate values. It can be corrected by export and import of the effected table.
+<br/><b>66.Describe hit ratio as it pertains to the database buffers. What is the difference between instantaneous and cumulative hit ratio and which should be used for tuning?</b><br/>
+Ans: The hit ratio is a measure of how many times the database was able to read a value from the buffers verses how many times it had to re-read a data value from the disks. A value greater than 80-90% is good, less could indicate problems. If you simply take the ratio of existing parameters this will be a cumulative value since the database started. If you do a comparison between pairs of readings based on some arbitrary time span, this is the instantaneous ratio for that time span. An instantaneous reading gives more valuable data since it will tell you what your instance is doing for the time it was generated over.
+<br/><b>67.What is a Cartesian product?</b><br/>
+Ans: A Cartesian product is the result of an unrestricted join of two or more tables. The result set of a three table Cartesian product will have x * y * z number of rows where x, y, z correspond to the number of rows in each table involved in the join.
+<br/><b>68.What is a mutating table error and how can you get around it?</b><br/>
+Ans: This happens with triggers. It occurs because the trigger is trying to update a row it is currently using. The usual fix involves either use of views or temporary tables so the database is selecting from one while updating the other.
+<br/><b>69.What are SQLCODE and SQLERRM and why are they important for PL/SQL developers?</b><br/>
+Ans: SQLCODE returns the value of the error number for the last error encountered. The SQLERRM returns the actual error message for the last error encountered. They can be used in exception handling to report, or, store in an error log table, the error that occurred in the code. These are especially useful for the WHEN OTHERS exception.
+<br/><b>70.What are Transactional Triggers ? Give the uses of Transational Trigger ?</b><br/>
+Ans: Transactional Triggers fire in response to transaction processing events. These events represent points during application processing at which Oracle Forms needs to interact with the data source. Examples of such events include updating records, rolling back to savepoints, and committing transactions. By default, Oracle Forms assumes that the data source is an ORACLE database, and issues the appropriate SQL statements to optimize transaction processing accordingly. However, by defining
+transactional triggers and user exits, you can build a form to interact with virtually any data source, including even non-relational databases and flat files. Calling User Exits When you define transactional triggers to interact with a non-ORACLE data source, you will usually include a call to a user exit in the appropriate triggers. The code in your user exit interacts with the non-ORACLE data source. Once the user exit has performed the appropriate function (as indicated by the trigger from which it was called), it returns control to Oracle Forms for subsequent processing. For example, a user exit called from an On-Fetch trigger might be responsible for retrieving the appropriate number of records from the non-ORACLE data source. Once the records are retrieved, Oracle Forms takes over the display and management of those records in the form interface, just as it would if the records had been fetched from an ORACLE database. Uses for Transactional Triggers • Transactional triggers, except for the commit triggers, are primarily intended to access certain data sources other than Oracle. • The logon and logoff transactional triggers can also be used with Oracle databases to change connections at run time.
+<br/><b>71.What is Autonomous transaction ? Where do we use it?</b><br/>
+Ans: In Oracle's database products, an autonomous transaction is an independent transaction that is initiated by another transaction. It must contain at least one Structured Query Language (SQL) statement. Autonomous transactions allow a single transaction to be subdivided into multiple commit/rollback transactions, each of which will be tracked for auditing purposes. When an autonomous transaction is called, the original transaction (calling transaction) is temporarily suspended. The autonomous transaction must commit or roll back before it returns control to the calling transaction. Once changes have been made by an autonomous transaction, those changes are visible to other transactions in the database. Autonomous transactions can be nested. That is, an autonomous transaction can operate as a calling transaction, initializing other autonomous transactions within itself.
+<br/><b>72.What is a package, procedure and function?</b><br/>
+Ans: Package : A package is a group of related program objects stored together as a unit in the database. A package is an encapsulated collection of related program objects stored together in the database. Program objects are: procedures, functions, variables, constants, cursors, exceptions. Procedure/Function : A procedure or function is a set of SQL and PL/SQL statements grouped together as an executable unit to perform a specific task. The main difference between a procedure and function is functions return a single variable by value whereas procedures do not return any variable by value. Rather they return multiple variables by passing variables by reference through their OUT parameter.
+<br/><b>73.What do u mean by overloading?</b><br/>
+Ans: Function Overloading : Packages allow you to overload procedures or functions. Overloading a procedure means creating multiple procedures with the same name in the same package, each taking arguments of different number or datatype.
+<br/><b>74.What are the constructs of a procedure, function or a package ?</b><br/>
+Ans: The constructs of a procedure, function or a package are : • variables and constants • cursors • exceptions
+<br/><b>75.What are cascading triggers? What is the maximum no of cascading triggers at a time?</b><br/>
+Ans: When a statement in a trigger body causes another trigger to be fired, the triggers are said to be cascading. Max = 32
+<br/><b>76.What is the significance of the & and && operators in PL/SQL ?</b><br/>
+Ans: The & operator means that the PL SQL block requires user input for a variable. The && operator means that the value of this variable should be the same as inputted by the user previously for this same variable.
+<br/><b>77.If all the values from a cursor have been fetched and another fetch is issued, the output will be?</b><br/>
+Ans: Last Record
+<br/><b>78.What is a forward declaration ? What is its use ?</b><br/>
+Ans: PL/SQL requires that you declare an identifier before using it. Therefore, you must declare a subprogram before calling it. This declaration at the start of a subprogram is called forward declaration. A forward declaration consists of a subprogram specification terminated by a semicolon.
+<br/><b>79.Any three PL/SQL Exceptions?</b><br/>
+Ans: Too_many_rows, No_Data_Found, Value_Error, Zero_Error, Others
+<br/><b>80.Describe the use of %ROWTYPE and %TYPE in PL/SQL</b><br/>
+Ans: %ROWTYPE allows you to associate a variable with an entire table row. The %TYPE associates a variable with a single column type.
+<br/><b>81.How can you call a PL/SQL procedure from SQL?</b><br/>
+Ans: By use of the EXECUTE (short form EXEC) command.
+<br/><b>82.What are the various types of Exceptions ?</b><br/>
+Ans: User defined and Predefined Exceptions.
+<br/><b>83.What is RAISE_APPLICATION_ERROR ?</b><br/>
+Ans: DBMS_STANDARD provides a procedure named raise_application_error, which lets you issue user-defined error messages. That way, you can report errors to an application and avoid returning unhandled exceptions. The calling syntax is : raise_application_error(error_number, error_message); where error_number is a negative integer in the range -20000...-20999 and error_message is a character string up to 2048 bytes in length. An application can call raise_application_error only from an executing stored subprogram. When called, raise_application_error ends the subprogram, rolls back any database changes it made, and returns a user-defined error number and message to the application. The error number and message can be trapped like any ORACLE error. The calling application gets a PL/SQL exception, which it can process using the error-reporting functions SQLCODE and SQLERRM in an OTHERS handler. • The statement Raise_Application_Error can be called either from a procedure body or from an exception handler. • Irrespective of whether an error occurred or not, a raise_application_error command always raises an exception in the calling program (eg a forms trigger). If an exception handler is not written in that forms trigger, then a forms error occurs.
+</p>
+	</div>
+		
+		
+	</body>
+</html>
