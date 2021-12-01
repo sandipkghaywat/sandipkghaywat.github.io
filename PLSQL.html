@@ -56,38 +56,269 @@
 	
 	<div id=section>
 	<p class=que id="1">Syllabus</p>
-	<b>ORACLE (SQL)</b><br/>
-	1. FUNDAMENTALS OF DATABASE:What is Data,DBMS,RDBMS,Oracle<br/>
-	 2. STRUCURE QUERY LANGUAGE( SQL ) AND CLIENT TOOLS <br/>
- 3. SQL LANGUAGES : DDL,DML, DRL,TCL,DCL Commands<br/>
- 4. DATA INTEGRITY CONSTRAINTS <br/>
- 5. OPERATORS <br/>
-  6.Types of JOINS <br/>
- 7. SUB - QUERIES <br/>
- 8. SQL OBJECTS <br/>
- 9. PARTITIONS <br/>
- 10. SQL FUNCTIONS 
+	<p>ORACLE - (SQL &amp; PL/SQL)</p>
 
-<p><b><u>PL/SQL</u></b><br/>
-1.Stored Procedures<br/>
-2.CONTOL STRUCTURES<br/>
-3.CONDITIONAL STATEMENTS<br/>
-4.LOOPS<br/>
-5.CURSORS<br/>
-6.What is BULK COLLECT?<br/>
-7.EXCEPTION HANDLING AND THEIR TYPES<br/>
-8.PL/SQL RECORDS AND TABLES<br/>
-9.FUNCTIONS<br/>
-10.PL/SQL Collections<br/>
-11.VARRAYS<br/>
-12.Associative Arrays<br/>
-13.Nested tables/ PLSQL TABLES<br/>
-14.TRIGGERS<br/>
-15.PACKAGES
-</p>
-<p>What are ACID Properties? ACID Properties are used for maintaining the integrity of database during transaction processing. ACID in DBMS stands for Atomicity, Consistency, Isolation, and Durability.</p>
-	
-	
+
+
+<p>
+1. Fundamentals of Database</p>
+
+<p>&bull; What is Data Base and Why is Data Base?<br>
+&bull; DBMS Concepts<br>
+&bull; RDBMS Concepts<br>
+&bull; Oracle versions<br>
+&bull; What is oracle 12c?<br>
+&bull; What is MULTITENANT DATABASE?<br>
+&bull; Features in Oracle 12c<br>
+&bull; Advantages of Oracle 12c<br>
+&bull; What is DATA MODEL for any OLTP RDBMS?</p>
+
+<p>2. STRUCURE QUERY LANGUAGE( SQL ) AND CLIENT TOOLS</p>
+
+<p>&bull; What is SQL?<br>
+&bull; Role of SQL in RDBMS<br>
+&bull; Sub-languages in SQL<br>
+&bull; CLIENT INTERFACE TOOS<br>
+&bull; SQL * PLUS<br>
+&bull; SQL DEVELOPER<br>
+&bull; PLSQL DEVELOPER<br>
+&bull; TOAD<br>
+&bull; Oracle data types</p>
+
+<p>3. SQL LANGUAGES</p>
+
+<p>Data Definition Language (DDL) Commands<br>
+&bull; CREATE<br>
+&bull; ALTER<br>
+&bull; TRUNCATE<br>
+&bull; DROP<br>
+&bull; RENAME</p>
+
+<p>Data Manipulation Languages(DML) Commands<br>
+&bull; INSERT<br>
+&bull; UPDATE<br>
+&bull; DELETE</p>
+
+<p>Data Query Language / Retrieval Language<br>
+&bull; SELECT</p>
+
+<p>Transaction Control Languages(TCL) Commands<br>
+&bull; ROLLBACK<br>
+&bull; COMMIT<br>
+&bull; SAVEPOINT</p>
+
+<p>Data Control Languages(DCL) Commands<br>
+&bull; GRANT<br>
+&bull; REVOKE</p>
+
+<p>4. DATA INTEGRITY CONSTRAINTS</p>
+
+<p>&bull; KEY Constraints<br>
+&bull; DOMAIN Constraints<br>
+&bull; REFERENTIAL INTEGRITY Constraints</p>
+
+<p>5. OPERATORS</p>
+
+<p>&bull; Arithmetic Operators<br>
+&bull; Relational Operators<br>
+&bull; Relation Negation Operators<br>
+&bull; Logical Operators<br>
+&bull; Set Operators (Union, Union All, Intersect, Minus)</p>
+
+<p>6. JOINS</p>
+
+<p>&bull; Purpose Of JOINS</p>
+
+<p>&bull; Types of JOINS</p>
+
+<p>Cross join<br>
+Equi join<br>
+Inner Join<br>
+Self Join<br>
+Outer joins<br>
+left Outer join<br>
+Right Outer join<br>
+Full Outer join<br>
+7. SUB - QUERIES</p>
+
+<p>&bull; Single row sub-queries<br>
+&bull; Multi-row sub-queries<br>
+&bull; Correlated Sub-Queries<br>
+&bull; Use of EXISTS / NOT EXISTS /ANY /ALL</p>
+
+<p>8. SQL OBJECTS</p>
+
+<p>8.1. VIEWS</p>
+
+<p>&bull; What is a view?<br>
+&bull; Importance of View.<br>
+&bull; Types of Views<br>
+&bull; Simple views</p>
+
+<p>Simple views with WITH CHECK OPTION<br>
+Simple views with WITH READ ONLY option<br>
+&bull; Composite views<br>
+&bull; Inline views<br>
+&bull; Materialized views</p>
+
+<p>Read Only Materialized view<br>
+Updatable Materialized view<br>
+Complex Materialized view<br>
+&bull; Force views</p>
+
+<p>8.2. INDEXES</p>
+
+<p>&bull; What is a INDEX<br>
+&bull; Necessity of Index<br>
+&bull; Types of Indexes</p>
+
+<p>Simple Index<br>
+Composite Index<br>
+Bitmap Index<br>
+Function based index<br>
+8.3. CLUSTERS</p>
+
+<p>&bull; Use of cluster<br>
+&bull; Creation of cluster<br>
+&bull; Advantages of clusters</p>
+
+<p>8.4. SEQUENCES</p>
+
+<p>&bull; Creating sequence<br>
+&bull; Uses of sequences</p>
+
+<p>Inserting sequence values<br>
+Updating column with sequence values<br>
+Altering sequence<br>
+Using sequence value as DEFAULT value<br>
+[ from oracle 12c ]<br>
+8.5. SYNONYMS</p>
+
+<p>&bull; Use of Synonym<br>
+&bull; Types of Synonyms(PUBLIC,PRIVATE)<br>
+&bull; How and when to create synonyms?</p>
+
+<p>9. PARTITIONS</p>
+
+<p>&bull; What is partition?<br>
+&bull; Types of partitions</p>
+
+<p>Range partition<br>
+List partition<br>
+Hash partition<br>
+10. SQL FUNCTIONS</p>
+
+<p>Categories of Functions<br>
+&bull; Group or Aggregate Functions<br>
+&bull; Scalar or Single Row Functions</p>
+
+<p>Types of Functions<br>
+&bull; Numerical Functions<br>
+&bull; String Functions<br>
+&bull; Conversion Functions<br>
+&bull; Date Functions<br>
+&bull; Analytical functions</p>
+
+<p>11. PL/SQL</p>
+
+<p>&bull; Introduction to PL/SQL<br>
+&bull; What is a Program block?<br>
+&bull; Advantages of PL/SQL.<br>
+&bull; Architecture of PL/SQL Engine<br>
+&bull; Features, Structure of Program Block<br>
+&bull; Data types, Executable Stmts.<br>
+&bull; What are the blocks in the program structure?<br>
+&bull; DECLARE Block<br>
+&bull; BEGIN Block<br>
+&bull; EXCEPTION Block<br>
+&bull; END</p>
+
+<p>11.1. TYPES OF PROGRAMS</p>
+
+<p>&bull; Static Programs<br>
+&bull; Dynamic Programs<br>
+&bull; Worked Examples and Assignments</p>
+
+<p>11.2. Type Compatibility keywords</p>
+
+<p>&bull; Declaring variables Dynamically --%TYPE<br>
+&bull; Declaring Table Type Record Variables--%ROWTYPE</p>
+
+<p>11.3. SUB PROGRAMS</p>
+
+<p>Stored Procedures<br>
+&bull; What is a procedure?<br>
+&bull; How to create it?<br>
+&bull; What are the advantages of procedures?<br>
+&bull; Types of stored procedures<br>
+&bull; Static Procedures (without Arguments)<br>
+&bull; Dynamic Procedures (with Arguments)<br>
+&bull; Arguments or Parameters Mode<br>
+&bull; IN OUT INOUT</p>
+
+<p>CONTOL STRUCTURES<br>
+CONDITIONAL STATEMENTS<br>
+&bull; Simple IF<br>
+&bull; IF&mdash;THEN&mdash;ELSE<br>
+&bull; COMPOUND IF<br>
+&bull; ELSIF Construct<br>
+&bull; Worked Examples and Assignments</p>
+
+<p>LOOPS<br>
+&bull; Simple Loop<br>
+&bull; While Loop<br>
+&bull; For Loop</p>
+
+<p>CURSORS<br>
+&bull; Types: Implicit and Explicit cursors<br>
+&bull; Cursor Variables<br>
+&bull; FOR loop cursor<br>
+&bull; Parameterized cursor<br>
+&bull; REF_CURSOR</p>
+
+<p>What is BULK COLLECT?<br>
+What is FORALL?<br>
+What is BULKBIND?</p>
+
+<p>EXCEPTION HANDLING AND THEIR TYPES<br>
+&bull; Predefined Exceptions<br>
+&bull; User defined Exceptions<br>
+&bull; Pragma_ Exception_init<br>
+&bull; RISE_APPLICATION_ERROR</p>
+
+<p>PL/SQL RECORDS AND TABLES<br>
+&bull; Composite Data Types<br>
+&bull; PL/SQL Records &amp; Tables<br>
+&bull; Nested Records<br>
+&bull; Using Record in a Table<br>
+&bull; And Examples</p>
+
+<p>FUNCTIONS<br>
+&bull; What is a Function?<br>
+&bull; When we have to create a function?<br>
+&bull; How to call it?<br>
+&bull; With and without arguments</p>
+
+<p>PL/SQL Collections<br>
+&bull; VARRAYS<br>
+&bull; Associative Arrays<br>
+&bull; Nested tables/ PLSQL TABLES</p>
+
+<p>TRIGGERS<br>
+&bull; What is a Trigger Program?<br>
+&bull; When we need a Trigger?<br>
+&bull; Parts of a Trigger<br>
+&bull; Types of Triggers<br>
+&bull; Database Triggers<br>
+&bull; Row Level Triggers with Ex.<br>
+&bull; Statement Level Triggers<br>
+&bull; Instead-of Triggers - Views with Ex.</p>
+
+<p>PACKAGES<br>
+&bull; What is a PACKAGE?<br>
+&bull; Structure of package<br>
+&bull; Package Spec and Body<br>
+&bull; Accessing procedures and functions from a package</p>
 	</div>
 		
 		
