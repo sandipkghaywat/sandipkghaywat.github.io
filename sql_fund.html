@@ -45,7 +45,7 @@
 </div>
 	<div id=leftmenus>
 		<ol class="r">
-		<li><a href="PLSQL_intro.html">Intro</a></li>	
+		<!--<li><a href="PLSQL_intro.html">Intro</a></li>	  -->	
 		<li><a href="PLSQL_oracle.html">Oracle</a></li>	
 		<li><a href="sql_fund.html">Fundamentals of DB</a></li>	
 		<li><a href="sql_.html">SQL</a></li>
@@ -65,8 +65,8 @@
 	</div>
 	
 	<div id=section>
-		<p> 
-				<p>1. Fundamentals of Database</p>
+		<p class=que>
+				<U>1. Fundamentals of Database</U></p>
 
 <p>&bull; What is Data Base and Why is Data Base?<br>
 &bull; DBMS Concepts<br>
@@ -79,8 +79,87 @@
 &bull; What is DATA MODEL for any OLTP RDBMS?</p>
 		</p>
 		
-	</div>
-		
-		
+		<b>What is database and why it is used?</b><br/>
+database, also called electronic database, any collection of data, or information, that is specially organized for rapid search and retrieval by a computer. Databases are structured to facilitate the storage, retrieval, modification, and deletion of data in conjunction with various data-processing operations.<br/><br/>
+
+<b>What is the concept of and types of DBMS?</b><br/>
+Image result for dbms concepts
+There are three main types of DBMS data models: relational, network, and hierarchical. Relational data model: Data is organized as logically independent tables. Network data model: All entities are organized in graphical representations. Hierarchical data model: Data is organized into a tree-like structure.<br/><br/>
+
+<b>What are the concepts of RDBMS?</b><br/>
+Image result for rdbms concepts
+An RDBMS is a type of database management system (DBMS) that stores data in a row-based table structure which connects related data elements. An RDBMS includes functions that maintain the security, accuracy, integrity and consistency of the data. This is different than the file storage used in a DBMS.
+<br/><br/>
+
+<table border="1">
+<tr><th>Oracle versions. TIMELINE (Evolution)</th><th></th></tr>
+<tr><td><b>1960s</b></td><td></td></tr>
+<tr><td>The term “database” emerged in the early 1960s when disks replaced tape-based storage. The first databases were non-relational meaning they were simply linked lists of free-form records. That changed within a decade.</td><td></td></tr>
+<tr><td><b>1970s</b></td><td></td></tr>
+<tr><td>In the 1970s relational databases were introduced and eventually became the norm. Unlike previous databases these offered normalized related and searchable tables.</td><td></td></tr>
+<tr><td><b>1980s</b></td><td></td></tr>
+<tr><td>Desktop computing became widely available in the 1980s along with user-friendly business software that interacts with underlying databases.</td><td></td></tr>
+<tr><td><b>1990s</b></td><td></td></tr>
+<tr><td>In the 1990s object-oriented programming (OOP) made it possible to organize data by classes and attributes rather than simply tables and fields.</td><td></td></tr>
+<tr><td><b>2000s</b></td><td></td></tr>
+<tr><td>Non-relational databases made a comeback in the 2000s in the form of NoSQL (not only SQL) databases. These are simple and very scalable so they meet the demands of big data and real-time web applications.</td></tr>
+</table>	
+
+
+
+
+
+<br/>	<br/>
+Database defined
+A database is an organized collection of structured information, or data, typically stored electronically in a computer system. A database is usually controlled by a database management system (DBMS). Together, the data and the DBMS, along with the applications that are associated with them, are referred to as a database system, often shortened to just database.<br/>
+
+Data within the most common types of databases in operation today is typically modeled in rows and columns in a series of tables to make processing and data querying efficient. The data can then be easily accessed, managed, modified, updated, controlled, and organized. Most databases use structured query language (SQL) for writing and querying data.<br/><br/>
+
+<b>What is Structured Query Language (SQL)?</b><br/>
+SQL is a programming language used by nearly all relational databases to query, manipulate, and define data, and to provide access control. SQL was first developed at IBM in the 1970s with Oracle as a major contributor, which led to implementation of the SQL ANSI standard, SQL has spurred many extensions from companies such as IBM, Oracle, and Microsoft. Although SQL is still widely used today, new programming languages are beginning to appear.<br/><br/>
+
+<b>Evolution of the database</b>
+Databases have evolved dramatically since their inception in the early 1960s. Navigational databases such as the hierarchical database (which relied on a tree-like model and allowed only a one-to-many relationship), and the network database (a more flexible model that allowed multiple relationships), were the original systems used to store and manipulate data. Although simple, these early systems were inflexible. In the 1980s, relational databases became popular, followed by object-oriented databases in the 1990s. More recently, NoSQL databases came about as a response to the growth of the internet and the need for faster speed and processing of unstructured data. Today, cloud databases and self-driving databases are breaking new ground when it comes to how data is collected, stored, managed, and utilized.<br/><br/>
+
+<b>What’s the difference between a database and a spreadsheet?</b>
+Databases and spreadsheets (such as Microsoft Excel) are both convenient ways to store information. The primary differences between the two are:
+
+How the data is stored and manipulated
+Who can access the data
+How much data can be stored
+Spreadsheets were originally designed for one user, and their characteristics reflect that. They’re great for a single user or small number of users who don’t need to do a lot of incredibly complicated data manipulation. Databases, on the other hand, are designed to hold much larger collections of organized information—massive amounts, sometimes. Databases allow multiple users at the same time to quickly and securely access and query the data using highly complex logic and language.<br/><br/>
+
+<b>Types of databases</b>
+There are many different types of databases. The best database for a specific organization depends on how the organization intends to use the data.<br/>
+
+<b>Relational databases</b><br/>
+Relational databases became dominant in the 1980s. Items in a relational database are organized as a set of tables with columns and rows. Relational database technology provides the most efficient and flexible way to access structured information.<br/>
+<b>Object-oriented databases</b><br/>
+Information in an object-oriented database is represented in the form of objects, as in object-oriented programming.<br/>
+<b>Distributed databases</b>
+A distributed database consists of two or more files located in different sites. The database may be stored on multiple computers, located in the same physical location, or scattered over different networks.<br/>
+<b>Data warehouses</b>
+A central repository for data, a data warehouse is a type of database specifically designed for fast query and analysis.<br/>
+<b>NoSQL databases</b>
+A NoSQL, or nonrelational database, allows unstructured and semistructured data to be stored and manipulated (in contrast to a relational database, which defines how all data inserted into the database must be composed). NoSQL databases grew popular as web applications became more common and more complex.<br/>
+<b>Graph databases</b>
+A graph database stores data in terms of entities and the relationships between entities.<br/>
+<b>OLTP databases.</b> An OLTP database is a speedy, analytic database designed for large numbers of transactions performed by multiple users.
+These are only a few of the several dozen types of databases in use today. Other, less common databases are tailored to very specific scientific, financial, or other functions. In addition to the different database types, changes in technology development approaches and dramatic advances such as the cloud and automation are propelling databases in entirely new directions. Some of the latest databases include.<br/>
+
+<b>Open source databases</b>
+An open source database system is one whose source code is open source; such databases could be SQL or NoSQL databases.<br/>
+<b>Cloud databases</b>
+A cloud database is a collection of data, either structured or unstructured, that resides on a private, public, or hybrid cloud computing platform. There are two types of cloud database models: traditional and database as a service (DBaaS). With DBaaS, administrative tasks and maintenance are performed by a service provider.
+Multimodel database
+Multimodel databases combine different types of database models into a single, integrated back end. This means they can accommodate various data types.
+Document/JSON database
+Designed for storing, retrieving, and managing document-oriented information, document databases are a modern way to store data in JSON format rather than rows and columns.
+Self-driving databases
+The newest and most groundbreaking type of database, self-driving databases (also known as autonomous databases) are cloud-based and use machine learning to automate database tuning, security, backups, updates, and other routine management tasks traditionally performed by database administrators.
+
+	<br/><br/><br/>
+	
+	</div>				
 	</body>
 </html>

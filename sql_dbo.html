@@ -45,7 +45,7 @@
 </div>
 	<div id=leftmenus>
 		<ol class="r">
-		<li><a href="PLSQL_intro.html">Intro</a></li>	
+		<!--<li><a href="PLSQL_intro.html">Intro</a></li>	  -->	
 		<li><a href="PLSQL_oracle.html">Oracle</a></li>	
 		<li><a href="sql_fund.html">Fundamentals of DB</a></li>	
 		<li><a href="sql_.html">SQL</a></li>
@@ -65,6 +65,134 @@
 	</div>
 	
 	<div id=section>
+	
+	<p class=que>8. DB OBJECTS - TABLES</p><br>
+1. Normal <br>
+2. Heap<br>
+3. Global Temporary Table<br>
+4. External<br>
+5. Index oraganized table<br>
+6. Partitioned<br>
+7. Clustered<br>
+8. Hash<br>
+9. Object <br>
+10. Pl-sql<br>
+11. Nested<br>
+12. Compressed<br>
+13. Virtual<br>
+14. Materialized view</p>
+
+<p>1. NORMAL TABLE: <br>
+Create table <br>
+(<br>
+Eno number<br>
+, Column_name varchar2(10)<br>
+) ORGANIZATION HEAP;</p>
+
+<p>2. HEAP TABLE :<br>
+Create table <br>
+(<br>
+Eno number<br>
+, Column_name varchar2(10)<br>
+) ORGANIZATION HEAP;</p>
+
+<p>3. GLOBAL TEMPORARY TABLE :<br>
+Create table <br>
+(<br>
+Eno number<br>
+, Column_name varchar2(10)<br>
+) ON COMMIT DELETE ROWS; -- TRANSACTION LEVEL TABLE means once commit data will delete.</p>
+
+<p>Create table <br>
+(<br>
+Eno number<br>
+, Column_name varchar2(10)<br>
+) ON COMMIT PRESERVE ROWS; -- -- SESSION LEVEL TABLE means once session is closed. Data will auto deleted.</p>
+
+<p>
+Structure is permanent but data is temporary in GTT. We can create synonym, view, index, constraint.</p>
+
+<p>4. EXTERNAL TABLE</p>
+
+<p>Only structure will be stored in database. The data is outside the database. We use oracle loader like to load data in external table.</p>
+
+<p>Create table emp_ext<br>
+(<br>
+Eno number<br>
+, ename varchar2(10)<br>
+) ORGANIZATION EXTERNAL<br>
+(DEFAULT DIRECTORY DIR1<br>
+ACESS PARAMETERS (RECORDS DELIMITED BY &quot;,&quot;<br>
+FIELDS TERMINATED BY &quot;,&quot;)<br>
+LOCATION ('ABC TXT')<br>
+);<br>
+5. INDEX ORGANIZED TABLE<br>
+Create table emp_ext<br>
+(<br>
+Eno number PRIMARY KEY<br>
+, ename varchar2(10)<br>
+)<br>
+ORGANIZATION TABLE;</p>
+
+<p>6. PARTITION TABLE<br>
+Create table emp_ext<br>
+(<br>
+Eno number PRIMARY KEY<br>
+, ename varchar2(10)<br>
+)<br>
+PARTITION BY RANGE(eno) -- number column<br>
+PARTITION P1 VALUES LESS THAN (10),<br>
+PARTITION P2 VALUES LESS THAN (20),<br>
+PARTITION P3 VALUES LESS THAN (30)<br>
+);</p>
+
+<p>7. CLUSTURED TABLE<br>
+Create cluster c_cluster(c1 number);</p>
+
+<p>8. HASH TABLE<br>
+ ORACLE COMPILER INTERNALLY CREATE SUCH TABLE. WE AS A USER CAN NOT CREATE HASH TABLE.</p>
+
+<p>9. OBJECT TABLE</p>
+
+<p>CREATE OR REPLACE TYPE address_type AS OBJECT<br>
+(<br>
+ENO NUMBER(3),<br>
+STREET VARCHAR2(5),<br>
+CITY VARCHAR(5)<br>
+)</p>
+
+<p>> Type created</p>
+
+<p>10. CREATE TABLE emp_type<br>
+(<br>
+ENO NUMBER(3),<br>
+ENAME VARCHAR2(5),<br>
+ADDRESS address address_type, -- OBJECT TYPE<br>
+SAL NUMBER(5)<br>
+);</p>
+
+<p>> Table created</p>
+
+<p>
+11. PL/SQL TABLE</p>
+
+<p></p>
+
+<p>12. NESTED TABLE<br>
+CREATE OR REPLACE TYPE my_tab_t AS TABLE OF VARCHAR2(30);</p>
+
+<p>Create table nested table<br>
+(<br>
+Id number,<br>
+, coll my_tab_t<br>
+)<br>
+NESTED TABLE coll STORE AS coll_tab;</p>
+
+<p>13. VERTUAL TABLE<br>
+</p>
+	
+	
+	
 		<p> 
 		
 		<p>8. SQL OBJECTS</p>

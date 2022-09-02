@@ -45,7 +45,7 @@
 </div>
 	<div id=leftmenus>
 		<ol class="r">
-		<li><a href="PLSQL_intro.html">Intro</a></li>	
+		<!--<li><a href="PLSQL_intro.html">Intro</a></li>	  -->	
 		<li><a href="PLSQL_oracle.html">Oracle</a></li>	
 		<li><a href="sql_fund.html">Fundamentals of DB</a></li>	
 		<li><a href="sql_.html">SQL</a></li>
@@ -66,22 +66,302 @@
 	
 	<div id=section>
 		<p> 
-				<p>2. STRUCURE QUERY LANGUAGE( SQL ) AND CLIENT TOOLS</p>
+				<p class=que>2. STRUCURE QUERY LANGUAGE( SQL ) AND CLIENT TOOLS</p>
 
-<p>&bull; What is SQL?<br>
-&bull; Role of SQL in RDBMS<br>
-&bull; Sub-languages in SQL<br>
-&bull; CLIENT INTERFACE TOOS<br>
-&bull; SQL * PLUS<br>
-&bull; SQL DEVELOPER<br>
-&bull; PLSQL DEVELOPER<br>
-&bull; TOAD<br>
+<p>&bull; What is SQL?<br/>
+&bull; Role of SQL in RDBMS<br/>
+&bull; Sub-languages in SQL<br/>
+&bull; CLIENT INTERFACE TOOS<br/>
+&bull; SQL * PLUS<br/>
+&bull; SQL DEVELOPER<br/>
+&bull; PLSQL DEVELOPER<br/>
+&bull; TOAD<br/>
 &bull; Oracle data types</p>
 				
 		</p>
+
 		
-	</div>
-		
+	
+	
+	<b>What is SQL?</b><br/>
+	SQL is a domain-specific language used in programming and designed for managing data held in a relational database management system, or for stream processing in a relational data stream management system. <br/><br/>
+<b> Role of SQL in RDBMS</b><br/><br/>
+SQL is a computer language that gives orders or instructions to the database. If you want to create a database, store data, update/delete, there are different commands known as SQL. All RDBMS use SQL as standard database language.
+<b> Sub-languages in SQL</b><br/><br/>
+SQL includes 5 types of sub-languages that are DDL, DML, DQL/DRL, DCL, and TCL.<br/>
+<b> CLIENT INTERFACE TOOS</b><br/><br/>
+<b> SQL * PLUS</b><br/><br/>
+SQL Plus is the most basic Oracle Database utility, with a basic command-line interface, commonly used by users, administrators, and programmers.<br/>
+<b> SQL DEVELOPER</b><br/><br/>
+<b> PLSQL DEVELOPER</b><br/><br/>
+<b> TOAD</b><br/><br/>
+<b> Oracle data types</b><br/>
+Oracle Built-In Datatypes<br/>
+ROWIDs and the ROWID Datatype<br/>
+Trusted Oracle MLSLABEL Datatype<br/>
+ANSI/ISO, DB2, and SQL/DS Datatypes<br/>
+Data Conversion<br/><br/>
+
+<b>Oracle Built-In Datatypes</b>
+<TABLE CLASS="Formal" BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="425404"></A>
+<FONT FACE="Helvetica, Arial, sans-serif">Datatype</FONT>
+ &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="425406"></A>
+<FONT FACE="Helvetica, Arial, sans-serif">Description</FONT>
+ &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="425408"></A>
+<FONT FACE="Helvetica, Arial, sans-serif">Column Length and Default </FONT>
+ &nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="425410"></A>
+<P CLASS="TB">
+CHAR (<EM CLASS="Italic">size</EM>)
+ &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="425412"></A>
+<P CLASS="TB">
+Fixed-length character data of length <EM CLASS="Italic">size</EM> bytes.
+ &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="425414"></A>
+<P CLASS="TB">
+Fixed for every row in the table (with trailing blanks); maximum size is 2000 bytes per row, default size is 1 byte per row. Consider the character set (one-byte or multibyte) before setting <EM CLASS="Italic">size.</EM>
+ &nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="425416"></A>
+<P CLASS="TB">
+VARCHAR2 (<EM CLASS="Italic">size</EM>)
+ &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="425418"></A>
+<P CLASS="TB">
+Variable-length character data. 
+ &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="425420"></A>
+<P CLASS="TB">
+Variable for each row, up to 4000 bytes per row. Consider the character set (one-byte or multibyte) before setting <EM CLASS="Italic">size.</EM> A maximum <EM CLASS="Italic">size</EM> must be specified.<EM CLASS="Italic"> </EM>
+ &nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="425422"></A>
+<P CLASS="TB">
+NCHAR(<EM CLASS="Italic">size</EM>)
+ &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="425424"></A>
+<P CLASS="TB">
+Fixed-length character data of length <EM CLASS="Italic">size</EM> characters or bytes, depending on the national character set. 
+ &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="425426"></A>
+<P CLASS="TB">
+Fixed for every row in the table (with trailing blanks). Column <EM CLASS="Italic">size</EM> is the number of characters for a fixed-width national character set or the number of bytes for a varying-width national character set. Maximum <EM CLASS="Italic">size</EM> is determined by the number of bytes required to store one character, with an upper limit of 2000 bytes per row. Default is 1 character or 1 byte, depending on the character set. 
+ &nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="425428"></A>
+<P CLASS="TB">
+NVARCHAR2 (<EM CLASS="Italic">size</EM>)
+ &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="425430"></A>
+<P CLASS="TB">
+Variable-length character data of length <EM CLASS="Italic">size</EM> characters or bytes, depending on national character set. A maximum <EM CLASS="Italic">size</EM> must be specified.
+ &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="425432"></A>
+<P CLASS="TB">
+Variable for each row. Column <EM CLASS="Italic">size</EM> is the number of characters for a fixed-width national character set or the number of bytes for a varying-width national character set. Maximum <EM CLASS="Italic">size</EM> is determined by the number of bytes required to store one character, with an upper limit of 4000 bytes per row. Default is 1 character or 1 byte, depending on the character set. 
+ &nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="425617"></A>
+<P CLASS="TB">
+CLOB 
+ &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="425619"></A>
+<P CLASS="TB">
+Single-byte character data. 
+ &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="425621"></A>
+<P CLASS="TB">
+Up to 2^32 - 1 &#32;bytes, or 4 gigabytes.
+ &nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="425611"></A>
+<P CLASS="TB">
+<CODE>NCLOB </CODE>
+ &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="425613"></A>
+<P CLASS="TB">
+Single-byte or fixed-length multibyte national character set (NCHAR) data. 
+ &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="425615"></A>
+<P CLASS="TB">
+Up to 2^32 - 1 &#32;bytes, or 4 gigabytes. 
+ &nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="425627"></A>
+<P CLASS="TB">
+<CODE>LONG</CODE>
+ &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="425629"></A>
+<P CLASS="TB">
+Variable-length character data.
+ &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="425631"></A>
+<P CLASS="TB">
+Variable for each row in the table, up to 2^31 - 1 &#32;bytes, or 2 gigabytes, per row. Provided for backward compatibility. 
+ &nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="425440"></A>
+<P CLASS="TB">
+<CODE>NUMBER (p, s) </CODE>
+ &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="425442"></A>
+<P CLASS="TB">
+Variable-length numeric data. Maximum precision <EM CLASS="Italic">p</EM> and/or scale <EM CLASS="Italic">s </EM>is 38.
+ &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="425444"></A>
+<P CLASS="TB">
+Variable for each row. The maximum space required for a given column is 21 bytes per row. 
+ &nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="425446"></A>
+<P CLASS="TB">
+<CODE>DATE</CODE>
+ &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="425448"></A>
+<P CLASS="TB">
+Fixed-length date and time data, ranging from Jan. 1, 4712 B.C.E. to Dec. 31, 4712 C.E. 
+ &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="425450"></A>
+<P CLASS="TB">
+Fixed at 7 bytes for each row in the table. Default format is a string (such as DD-MON-YY) specified by NLS_DATE_FORMAT parameter. 
+ &nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="425464"></A>
+<P CLASS="TB">
+<CODE>BLOB </CODE>
+ &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="425466"></A>
+<P CLASS="TB">
+Unstructured binary data. 
+ &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="425468"></A>
+<P CLASS="TB">
+Up to 2^32 - 1 &#32;bytes, or 4 gigabytes.
+ &nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="425482"></A>
+<P CLASS="TB">
+<CODE>BFILE </CODE>
+ &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="425484"></A>
+<P CLASS="TB">
+Binary data stored in an external file. 
+ &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="425486"></A>
+<P CLASS="TB">
+Up to 2^32 - 1 &#32;bytes, or 4 gigabytes.
+ &nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="425593"></A>
+<P CLASS="TB">
+<CODE>RAW (size)</CODE>
+ &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="425595"></A>
+<P CLASS="TB">
+Variable-length raw binary data. 
+ &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="425646"></A>
+<P CLASS="TB">
+Variable for each row in the table, up to 2000 bytes per row. A maximum <EM CLASS="Italic">size </EM>must be specified. Provided for backward compatibility. 
+ &nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="425587"></A>
+<P CLASS="TB">
+<CODE>LONG RAW</CODE>
+ &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="425589"></A>
+<P CLASS="TB">
+Variable-length raw binary data.
+ &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="425591"></A>
+<P CLASS="TB">
+Variable for each row in the table, up to 2^31 - 1 &#32;bytes, or 2 gigabytes, per row. Provided for backward compatibility. 
+ &nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="425633"></A>
+<P CLASS="TB">
+<CODE>ROWID</CODE>
+ &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="425635"></A>
+<P CLASS="TB">
+Binary data representing row addresses.
+ &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="425637"></A>
+<P CLASS="TB">
+Fixed at 10 bytes (extended ROWID) or 6 bytes (restricted ROWID) for each row in the table. 
+ &nbsp;</TD>
+</TR>
+<TR CLASS="Formal" ALIGN="LEFT" VALIGN="TOP"><TD CLASS="Formal">
+<A NAME="425494"></A>
+<P CLASS="TB">
+<CODE>MLSLABEL</CODE>
+ &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="425496"></A>
+<P CLASS="TB">
+Trusted Oracle datatype.
+ &nbsp;</TD>
+<TD CLASS="Formal">
+<A NAME="425503"></A>
+<P CLASS="TB">
+See the <EM CLASS="Italic">Trusted Oracle</EM> documentation. 
+ &nbsp;</TD>
+</TR>
+
+</TABLE>
+
+
+	</div>	
 		
 	</body>
 </html>

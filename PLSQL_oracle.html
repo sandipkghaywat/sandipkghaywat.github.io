@@ -45,7 +45,7 @@
 </div>
 	<div id=leftmenus>
 		<ol class="r">
-<li><a href="PLSQL_intro.html">Intro</a></li>	
+<!--<li><a href="PLSQL_intro.html">Intro</a></li>	  -->	
 		<li><a href="PLSQL_oracle.html">Oracle</a></li>	
 		<li><a href="sql_fund.html">Fundamentals of DB</a></li>	
 		<li><a href="sql_.html">SQL</a></li>
@@ -98,130 +98,27 @@ Personal Edition: It's comparable to the Enterprise Edition but without the Orac
 </table>		
  <br/> 
  
-</table><br/><table border='1'>
-	<thead>
-		<tr>
-			<th>Data Type</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>VARCHAR2(size [BYTE | CHAR])</td>
-		</tr>
-		<tr>
-			<td>NVARCHAR2(size)</td>
-		</tr>
-		<tr>
-			<td>NUMBER[(precision [, scale]])</td>
-		</tr>
-		<tr>
-			<td>LONG</td>
-		</tr>
-		<tr>
-			<td>DATE</td>
-		</tr>
-		<tr>
-			<td>BINARY_FLOAT</td>
-		</tr>
-		<tr>
-			<td>BINARY_DOUBLE</td>
-		</tr>
-		<tr>
-			<td>RAW(size)</td>
-		</tr>
-		<tr>
-			<td>LONG RAW</td>
-		</tr>
-		<tr>
-			<td>ROWID</td>
-		</tr>
-		<tr>
-			<td>CHAR [(size [BYTE | CHAR])]</td>
-		</tr>
-		<tr>
-			<td>NCHAR[(size)]</td>
-		</tr>
-		<tr>
-			<td>CLOB</td>
-		</tr>
-		<tr>
-			<td>NCLOB</td>
-		</tr>
-		<tr>
-			<td>BLOB</td>
-		</tr>
-		<tr>
-			<td>BFILE</td>
-		</tr>
-		<tr>
-			<td>TIMESTAMP [(fractional_seconds)]</td>
-		</tr>
-		<tr>
-			<td>TIMESTAMP [(fractional_seconds)] WITH TIME ZONE</td>
-		</tr>
-		<tr>
-			<td>INTERVAL YEAR [(year_precision)] TO MONTH</td>
-		</tr>
-		<tr>
-			<td>INTERVAL DAY [(day_precision)] TO SECOND[(fractional_seconds)]</td>
-		</tr>
-		<tr>
-			<td>UROWID [(size)]</td>
-		</tr>
-		<tr>
-			<td>TIMESTAMP [(fractional_seconds)] WITH LOCAL TIMEZONE</td>
-		</tr>
-	</tbody>
-</table>
-<br/>
+ <b>The Oracle Database Product Family</b><br/>
+Oracle Database is available in five editions, each suitable for different development and deployment scenarios. Oracle also offers several database options, packs, and other products that enhance the capabilities of Oracle Database for specific application purposes. This section describes the Oracle Database editions. The database enhancement products are described in Chapter 2, "Options and Packs".
 
+<b>Oracle Database Standard Edition One </b><br/>
+Oracle Database Standard Edition One delivers unprecedented ease of use, power, and performance for workgroup, department-level, and Web applications. From single-server environments for small business to highly distributed branch environments, Oracle Database Standard Edition One includes all the facilities necessary to build business-critical applications.<br/>
 
-<p><b>Types of SQL Statements</b><br/>
-SQL statements are categorized into four different types of statements, which are<br>
-DML (DATA MANIPULATION LANGUAGE)<br>
-DDL (DATA DEFINITION LANGUAGE)<br>
-DCL (DATA CONTROL LANGUAGE)<br>
-TCL (TRANSACTION CONTROL LANGUAGE)</p>
+<b>Oracle Database Standard Edition </b><br/>
+Oracle Database Standard Edition delivers the unprecedented ease of use, power, and performance of Standard Edition One, with support for larger machines and clustering of services with Oracle Real Application Clusters (Oracle RAC). Oracle RAC is not included in the Standard Edition of releases prior to Oracle Database 10g, nor is it an available option with those earlier releases.<br/>
 
-<img src="dbms-sql-command.png" alt="Types of SQL Statement"/>
-<br/> <p>
-<b>Oracle Constraint's</b><br/>
-NOT NULL Constraint &#8722; Ensures that a column cannot have NULL value.<br/>
-DEFAULT Constraint &#8722; Provides a default value for a column when none is specified.<br/>
-UNIQUE Constraint &#8722; Ensures that all values in a column are different.<br/>
-PRIMARY Key &#8722; Uniquely identifies each row/record in a database table.<br/>
-FOREIGN Key &#8722; Uniquely identifies a row/record in any of the given database table.<br/>
-CHECK Constraint &#8722; The CHECK constraint ensures that all the values in a column satisfies certain conditions.<br/>
-INDEX &#8722; Used to create and retrieve data from the database very quickly.</p>
+<b>Oracle Database Enterprise Edition </b><br/>
+Oracle Database Enterprise Edition provides the performance, availability, scalability, and security required for mission-critical applications such as high-volume online transaction processing (OLTP) applications, query-intensive data warehouses, and demanding Internet applications. Oracle Database Enterprise Edition contains all of the components of Oracle Database, and can be further enhanced with the purchase of the options and packs described in Chapter 2, "Options and Packs".<br/>
 
-<p>
-<b>Operators</b><br/>
-Arithmetic operators<br>
-Relational operators<br>
-Comparison operators<br>
-Logical operators<br>
-String operators 
-</p>
+<b>Oracle Database Express Edition  </b><br/>
+Oracle Database Express Edition (Oracle Database XE) is an entry-level edition of Oracle Database that is quick to download, simple to install and manage, and is free to develop, deploy, and distribute. Oracle Database XE makes it easy to upgrade to the other editions of Oracle without costly and complex migrations. Oracle Database XE can be installed on any size machine with any number of CPUs, stores up to 4GB of user data, using up to 1GB of memory, and using only one CPU on the host machine. Support is provided by an online forum.<br/>
 
-<p><b>Joins</b><br/>
-Oracle INNER JOIN (or sometimes called simple join)<br>
-Oracle LEFT OUTER JOIN (or sometimes called LEFT JOIN)<br>
-Oracle RIGHT OUTER JOIN (or sometimes called RIGHT JOIN)<br>
-Oracle FULL OUTER JOIN (or sometimes called FULL JOIN)</p>
+<b>Oracle Database Personal Edition </b><br/>
+Oracle Database Personal Edition supports single-user development and deployment environments that require full compatibility with Oracle Database Standard Edition One, Oracle Database Standard Edition, and Oracle Database Enterprise Edition.<br/>
 
-<p><b>Subquery</b><br/>
-There are three broad divisions of subquery:<br>
-Single-row subqueries<br>
-Multiple-row subqueries<br>
-Correlated subqueries</p>
-
-<b>8. SQL OBJECTS</b><br/>
-
-<b>9. PARTITIONS</b><br/>
-
-<b>10. SQL FUNCTIONS</b><br/>
-
-<b>11. PL/SQL</b><br/>
+Personal Edition includes all of the components that are included with Enterprise Edition, as well as all of the options that are available with Enterprise Edition, with the exception of the Oracle Real Application Clusters option, which cannot be used with Personal Edition. Personal Edition is available on Windows platforms only. The Management Packs are not included in Personal Edition.
+ 
+</table><br/>
 
 
 
