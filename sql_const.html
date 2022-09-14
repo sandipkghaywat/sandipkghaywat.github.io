@@ -71,6 +71,16 @@
 <p>&bull; KEY Constraints<br>
 &bull; DOMAIN Constraints<br>
 &bull; REFERENTIAL INTEGRITY Constraints</p>
+
+1. NOT NULL<br/>2. UNIQUE<br/>3. PRIMARY KEY<br/>4. FOREIGN KEY Constraints<br/>5. CHECK Constraint.<br/>6. REF constraint<br/><br/>
+
+ALTER TABLE OMC_CUSTOMER_CARD<br/>
+ADD CONSTRAINT RC_NUMBER_UNIQUE UNIQUE (RC_NUMBER);<br/>
+
+ALTER TABLE supplier<br/>
+ADD CONSTRAINT supplier_pk PRIMARY KEY (supplier_id);<br/>
+
+alter table contactable_customer_answer add constraint DEFAULT_YN check (ANSWER in ('Y','N'));
 		</p>
 		
 	</div>

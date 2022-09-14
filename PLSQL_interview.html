@@ -47,8 +47,8 @@
 	<div id=leftmenus>
 <ol class="r">
 <!--<li><a href="PLSQL_intro.html">Intro</a></li>	  -->	
-		<li><a href="PLSQL_oracle.html">Oracle</a></li>	
-		<li><a href="sql_fund.html">Fundamentals of DB</a></li>	
+		<li><a href="PLSQL_oracle.html">ORACLE</a></li>	
+		<li><a href="sql_fund.html">FUND. OF DB</a></li>	
 		<li><a href="sql_.html">SQL</a></li>
 		<li><a href="sql_lang.html">SQL LANGUAGES</a></li>
 		<li><a href="sql_const.html">CONSTRAINTS</a></li>
@@ -59,51 +59,48 @@
 		<li><a href="sql_part.html">PARTITIONS</a></li>
 		<li><a href="sql_fun.html">FUNCTIONS</a></li>
 		<li><a href="sql_plsql.html">PL/SQL</a></li>
-		<li><a href="PLSQL_interview.html">PLSQL Interview</a></li>				
+		<li><a href="PLSQL_interview.html">PLSQL INTERVIEW</a></li>			
 		</ol>
 		
 	</div>
 	
-	<div id=section>
-	
-
-
-	
-	
-		<p class=que id="1">1. What is the difference between</p>
+	<div id=section><br/><br/>	
+	<b>ORACLE PL SQL INTERVIEW QUESTION ANSWER</b><br/><br/>
+		<b>1. What is the difference between</b><br/>
 		<table border = "2">
-<tr><th>PRIMARY KEY</th> <th>UNIQUE KEY</th> <th>FOREIGN KEY</th>  <th>CANDIDATE KEY</th></tr>
-<tr><td>	It doesn’t allow Null values.
-Because of this we refer
-PRIMARY KEY = UNIQUE KEY + Not Null CONSTRAINT</td> <td>
-Because of this we refer
-PRIMARY KEY = UNIQUE KEY + Not Null CONSTRAINT	Allows Null value. But only one Null value.</td><td></td><td></td></tr>  
-<tr><td>A table can have only one PRIMARY KEY Column[s]</td><td>Column[s]	A table can have more than one UNIQUE Key Column[s]</td></tr>
-<tr><td>	By default it adds a clustered index</td><td>By default it adds a UNIQUE non-clustered index</td></tr>
+<tr>
+<th>PRIMARY KEY</th> <th>UNIQUE KEY</th> <th>FOREIGN KEY</th>
+</tr>
+
+<tr><td>It doesn’t allow Null values.Because of this we referPRIMARY KEY = UNIQUE KEY + Not Null CONSTRAINT</td> 
+<td>Because of this we referPRIMARY KEY = UNIQUE KEY + Not Null CONSTRAINT	Allows Null value. But only one Null value.</td>
+<td>A foreign key is generally used to build a relationship between the two tables.A foreign key is a field in the table that is the primary key in another table.</td>
+</tr>  
+
+<tr><td>A table can have only one PRIMARY KEY Column[s]</td>
+<td>Column[s]	A table can have more than one UNIQUE Key Column[s]</td>
+<td>Tables can allow more than one foreign key.Foreign key accepts multiple null values.Tables can allow more than one foreign key.</td>
+</tr>
+
+<tr><td>By default it adds a clustered index</td>
+<td>By default it adds a UNIQUE non-clustered index</td>
+<td>The foreign key constraint alone does not provide the index on Oracle </td>
+</tr>
 		</table>
 		
-		
-		<p>
-<b>ORACLE PL SQL INTERVIEW QUESTION ANSWER</b><br/>
-<b>1. Tell me about yourself</b><br/>
-<b>2. What is difference between TRUNCATE & DELETE?</b><br/>
-<b>3. Truncate is a DDL command</b><br/>
-<b>4. We can remove bulk amount of records at a time</b><br/>
-<b>5 We can't rollback the records</b><br/>
-<b>6. Release the space in database</b><br/>
-<b>7. Truncate reset the high water mark</b><br/>
-<b>8. Truncate explicitly commit</b><br/>
-<b>9. Delete is a DML command</b><br/>
-<b>10. We can delete record by record</b><br/>
-<b>11. We can rollback the records</b><br/>
-<b>12. Can’t release the memory in database</b><br/>
-<b>13. Delete can’t reset the water mark</b><br/>
-<b>14. Delete implicitly commit(OR)</b><br/>
-Ans: Differences:
-TRUNCATE commits after deleting entire table i.e., cannot be rolled back.
-Database triggers do not fire on TRUNCATE DELETE allows the filtered deletion.
-Deleted records can be rolled back or committed.Database triggers fire on DELETE.<br/>
-<b>15. Difference between view and materialized view</b><br/>
+
+<p><b>2. What is a Clustered index?</b><br>
+Cluster index is a type of index which sorts the data rows in the table on their key values. In the Database, there is only one clustered index per table.<br/>
+A clustered index defines the order in which data is stored in the table which can be sorted in only one way. So, there can be an only a single clustered index for every table. In an RDBMS, usually, the primary key allows you to create a clustered index based on that specific column.</p>
+
+<p><b>3. What is Non-clustered index?</b><br>
+A Non-clustered index stores the data at one location and indices at another location. The index contains pointers to the location of that data. A single table can have many non-clustered indexes as an index in the non-clustered index is stored in different places.</p>
+<p>
+
+<b>4. What is difference between TRUNCATE & DELETE?</b><br/>
+ Truncate is a DDL command. We can remove bulk amount of records at a time in truncate. But,We can't rollback the records.In truncate Release the space in database. Truncate reset the high water mark.Truncate explicitly commit.<br/>
+While Delete is a DML command. We can delete record by record using where clause also. We can rollback the records.Can’t release the memory in database. Delete can’t reset the water mark. Delete implicitly commit. TRUNCATE commits after deleting entire table i.e., cannot be rolled back.Database triggers do not fire on TRUNCATE, DELETE allows the filtered deletion.Deleted records can be rolled back or committed.Database triggers (on delete cascade) fire on DELETE.<br/>
+<b>5. Difference between view and materialized view</b><br/>
 Difference
 View is a logical table
 View can hold the query
@@ -113,7 +110,7 @@ Mv is a physical table
 Mv can hold the query with refresh data
 We can create indexes on mv
 Mv will create performance issues<br/>
-<b>16. Difference between procedure and function?</b><br/>
+<b>6. Difference between procedure and function?</b><br/>
 Procedure:
 Procedure allow the DML statements without any restrictions
 We can’t call procedure in sql language
@@ -122,27 +119,17 @@ Function:
 Function not allow the DML statements (If you need to use we can use pragma)
 We can call Function in sql language
 Function can’t store images<br/>
-<b>17. What is cursor?</b><br/>
+<b>7. What is cursor?</b><br/>
 Cursor is private sql area which is used to execute sql statements and store processing information<br/>
-<b>18. What is explicit and implicit cursor and examples?</b><br/>
+<b>8. What is explicit and implicit cursor and examples?</b><br/>
 The implicit cursor is automatically declared by oracle every time an sql statement is executed whenever you issue a sql statement, the oracle server opens an area of memory in which the command is parsed and executed. Every implicit cursor attribute start with sql%.
 An explicit cursor is created and managed by the user. And used for multi row select statement.<br/>
-<b>19.What do u understand by database and what is objects in oracle</b><br/>
+<b>9.What do u understand by database and what is objects in oracle</b><br/>
 Ans: A database is defined as a collection of meaningful data. Objects in oracle means Table, Views, Procedures, Triggers, Synonym etc<br/>
-<b>20.What is a table, view, snapshot?</b><br/>
+<b>10.What is a table, view, snapshot?</b><br/>
 Table: A table is the basic unit of data storage in an Oracle database. The tables of a database hold all of the user accessible data. Table data is stored in rows and columns.a
 Views: A view is a virtual table. Every view has a query attached to it. (The query is a SELECT statement that identifies the columns and rows of the table(s) the view uses.)
 Snapshot: A Snapshot is a recent copy of a table from database or in some cases ,a subset of rows/columns of a table. It is also known as Materialized view.<br/>
-<b>21. Do a view contain data?</b><br/>
-Ans: Views do not contain or store data</br>
-<b>What are the advantages of views?</b>
-Ans: Provide an additional level of table security, by restricting access to a predetermined set of rows and columns of a table.
-- Hide data complexity.
-- Simplify commands for the user.
-- Present the data in a different perspective from that of the base table.
-- Store complex queries.<br/>
-<b>10.What is an Oracle sequence?</b></br>
-Ans: A Sequence generates a serial list of unique numbers for numerical columns of a database's tables.</br>
 <b>11.What is a synonym?</b></br>
 Ans: A synonym is an alias for a table, view, sequence or program unit.</br>
 <b>12.What are the types of synonyms?</b></br>
@@ -366,6 +353,16 @@ Ans: User defined and Predefined Exceptions.
 <br/><b>83.What is RAISE_APPLICATION_ERROR ?</b><br/>
 Ans: DBMS_STANDARD provides a procedure named raise_application_error, which lets you issue user-defined error messages. That way, you can report errors to an application and avoid returning unhandled exceptions. The calling syntax is : raise_application_error(error_number, error_message); where error_number is a negative integer in the range -20000...-20999 and error_message is a character string up to 2048 bytes in length. An application can call raise_application_error only from an executing stored subprogram. When called, raise_application_error ends the subprogram, rolls back any database changes it made, and returns a user-defined error number and message to the application. The error number and message can be trapped like any ORACLE error. The calling application gets a PL/SQL exception, which it can process using the error-reporting functions SQLCODE and SQLERRM in an OTHERS handler. • The statement Raise_Application_Error can be called either from a procedure body or from an exception handler. • Irrespective of whether an error occurred or not, a raise_application_error command always raises an exception in the calling program (eg a forms trigger). If an exception handler is not written in that forms trigger, then a forms error occurs.
 </p>
+<b>84. Do a view contain data?</b><br/>
+Ans: Views do not contain or store data</br>
+<b>85. What are the advantages of views?</b>
+Ans: Provide an additional level of table security, by restricting access to a predetermined set of rows and columns of a table.
+- Hide data complexity.
+- Simplify commands for the user.
+- Present the data in a different perspective from that of the base table.
+- Store complex queries.<br/>
+<b>86.What is an Oracle sequence?</b></br>
+Ans: A Sequence generates a serial list of unique numbers for numerical columns of a database's tables.</br>
 	</div>
 		
 		

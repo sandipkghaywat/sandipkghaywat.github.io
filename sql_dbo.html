@@ -66,7 +66,16 @@
 	
 	<div id=section>
 	
-	<p class=que>8. DB OBJECTS - TABLES</p><br>
+	<p class=que>8. DB OBJECTS</p><br>
+	<b>&bull; TABLE</B><br/>
+	<b>&bull; VIEW</B><br/>
+	<b>&bull; INDEXES</B><br/>
+	<b>&bull; CLUSTERS</B><br/>
+	<b>&bull; SEQUENCES</B><br/>
+	<b>&bull; SYNONYMS</B><br/>
+	<b>&bull; OTHER OBJECTS</B><br/><br/>
+
+<b>8.0 TABLE</B><br/>	
 1. Normal <br>
 2. Heap<br>
 3. Global Temporary Table<br>
@@ -80,23 +89,23 @@
 11. Nested<br>
 12. Compressed<br>
 13. Virtual<br>
-14. Materialized view</p>
+</p>
 
-<p>1. NORMAL TABLE: <br>
+<p><U>1. NORMAL TABLE:</U><br>
 Create table <br>
 (<br>
 Eno number<br>
 , Column_name varchar2(10)<br>
 ) ORGANIZATION HEAP;</p>
 
-<p>2. HEAP TABLE :<br>
+<p><U>2. HEAP TABLE :</U><br>
 Create table <br>
 (<br>
 Eno number<br>
 , Column_name varchar2(10)<br>
 ) ORGANIZATION HEAP;</p>
 
-<p>3. GLOBAL TEMPORARY TABLE :<br>
+<p><U>3. GLOBAL TEMPORARY TABLE :</U><br>
 Create table <br>
 (<br>
 Eno number<br>
@@ -112,7 +121,7 @@ Eno number<br>
 <p>
 Structure is permanent but data is temporary in GTT. We can create synonym, view, index, constraint.</p>
 
-<p>4. EXTERNAL TABLE</p>
+<p><U>4. EXTERNAL TABLE</U></p>
 
 <p>Only structure will be stored in database. The data is outside the database. We use oracle loader like to load data in external table.</p>
 
@@ -126,7 +135,7 @@ ACESS PARAMETERS (RECORDS DELIMITED BY &quot;,&quot;<br>
 FIELDS TERMINATED BY &quot;,&quot;)<br>
 LOCATION ('ABC TXT')<br>
 );<br>
-5. INDEX ORGANIZED TABLE<br>
+<U>5. INDEX ORGANIZED TABLE</U><br>
 Create table emp_ext<br>
 (<br>
 Eno number PRIMARY KEY<br>
@@ -134,7 +143,7 @@ Eno number PRIMARY KEY<br>
 )<br>
 ORGANIZATION TABLE;</p>
 
-<p>6. PARTITION TABLE<br>
+<p><U>6. PARTITION TABLE</U><br>
 Create table emp_ext<br>
 (<br>
 Eno number PRIMARY KEY<br>
@@ -146,13 +155,13 @@ PARTITION P2 VALUES LESS THAN (20),<br>
 PARTITION P3 VALUES LESS THAN (30)<br>
 );</p>
 
-<p>7. CLUSTURED TABLE<br>
+<p><U>7. CLUSTURED TABLE</U><br>
 Create cluster c_cluster(c1 number);</p>
 
-<p>8. HASH TABLE<br>
+<p><U>8. HASH TABLE</U><br>
  ORACLE COMPILER INTERNALLY CREATE SUCH TABLE. WE AS A USER CAN NOT CREATE HASH TABLE.</p>
 
-<p>9. OBJECT TABLE</p>
+<p><U>9. OBJECT TABLE</U></p>
 
 <p>CREATE OR REPLACE TYPE address_type AS OBJECT<br>
 (<br>
@@ -163,7 +172,7 @@ CITY VARCHAR(5)<br>
 
 <p>> Type created</p>
 
-<p>10. CREATE TABLE emp_type<br>
+<p><U>10. CREATE TABLE emp_type</U><br>
 (<br>
 ENO NUMBER(3),<br>
 ENAME VARCHAR2(5),<br>
@@ -174,11 +183,11 @@ SAL NUMBER(5)<br>
 <p>> Table created</p>
 
 <p>
-11. PL/SQL TABLE</p>
+<U>11. PL/SQL TABLE</U></p>
 
 <p></p>
 
-<p>12. NESTED TABLE<br>
+<p><U>12. NESTED TABLE</U><br>
 CREATE OR REPLACE TYPE my_tab_t AS TABLE OF VARCHAR2(30);</p>
 
 <p>Create table nested table<br>
@@ -188,16 +197,13 @@ Id number,<br>
 )<br>
 NESTED TABLE coll STORE AS coll_tab;</p>
 
-<p>13. VERTUAL TABLE<br>
+<p><U>13. VERTUAL TABLE</U><br>
 </p>
 	
 	
 	
 		<p> 
-		
-		<p>8. SQL OBJECTS</p>
-
-<p>8.1. VIEWS</p>
+<p><b>8.1. VIEWS</b></p>
 
 <p>&bull; What is a view?<br>
 &bull; Importance of View.<br>
@@ -215,7 +221,7 @@ Updatable Materialized view<br>
 Complex Materialized view<br>
 &bull; Force views</p>
 
-<p>8.2. INDEXES</p>
+<p><b>8.2. INDEXES</b></p>
 
 <p>&bull; What is a INDEX<br>
 &bull; Necessity of Index<br>
@@ -225,31 +231,9 @@ Complex Materialized view<br>
 Composite Index<br>
 Bitmap Index<br>
 Function based index<br>
-8.3. CLUSTERS</p>
 
-<p>&bull; Use of cluster<br>
-&bull; Creation of cluster<br>
-&bull; Advantages of clusters</p>
-
-<p>8.4. SEQUENCES</p>
-
-<p>&bull; Creating sequence<br>
-&bull; Uses of sequences</p>
-
-<p>Inserting sequence values<br>
-Updating column with sequence values<br>
-Altering sequence<br>
-Using sequence value as DEFAULT value<br>
-[ from oracle 12c ]<br>
-8.5. SYNONYMS</p>
-
-<p>&bull; Use of Synonym<br>
-&bull; Types of Synonyms(PUBLIC,PRIVATE)<br>
-&bull; How and when to create synonyms?</p>
-				<B>SQL OTHER OBJECTS</B><br>
-				
-				<p>
-				<U>INDEX</U> <br>
+<p>
+				<U>TYPES OF INDEXES</U> <br>
 1. B-TREE INDEX<br>
 2. NORAMAL INDEX<br>
 3. UNIQUE INDEX<br>
@@ -271,6 +255,32 @@ Using sequence value as DEFAULT value<br>
 19. UNUSABLE INDEX<br>
 20. VIRTUAL OR NOSEGMENT INDEX<br>
 </p>
+<b>8.3. CLUSTERS</b></p>
+
+<p>&bull; Use of cluster<br>
+&bull; Creation of cluster<br>
+&bull; Advantages of clusters</p>
+
+
+
+<p><b>8.4. SEQUENCES</b></p>
+
+<p>&bull; Creating sequence<br>
+&bull; Uses of sequences</p>
+
+<p>Inserting sequence values<br>
+Updating column with sequence values<br>
+Altering sequence<br>
+Using sequence value as DEFAULT value<br>
+[ from oracle 12c ]<br></p>
+<b>8.5. SYNONYMS</b>
+
+<p>&bull; Use of Synonym<br>
+&bull; Types of Synonyms(PUBLIC,PRIVATE)<br>
+&bull; How and when to create synonyms?</p>
+				<B>SQL OTHER OBJECTS</B><br>
+				
+				
 				
 				
 		</p>
